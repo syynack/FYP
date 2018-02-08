@@ -1,7 +1,7 @@
 
-ENDPOINTS_BASE_TEXT = '''# This file is used to define endpoint information to be used when executing
+TARGETS_BASE_TEXT = '''# This file is used to define target information to be used when executing
 # tasks. This information is what shall be used when attempting to connect
-# to the target endpoints.
+# to the targets.
 
 
 # Authentication
@@ -13,18 +13,17 @@ global_username: ''
 
 
 # Endpoints
-# Define a global os if all the endpoints run the same operating system
-global_os: ''
+# Define a global vendor if all the targets run the same operating system
+global_vendor: ''
 
 # Define endpoint information
-endpoints:
+targets:
 
 # Example
-- os: 'linux'
+- vendor: 'cisco_ios'
   ip: '192.168.0.1'
-
-- os: 'cisco_ios'
-  ip: '192.168.0.2'
+  username: 'username'
+  password: 'password'
 '''
 
 TASK_BASE_TEXT = '''# This file is used to define task stages to be executed within the task.
@@ -33,14 +32,13 @@ TASK_BASE_TEXT = '''# This file is used to define task stages to be executed wit
 task:
 
 # Example
-- 'get_interfaces_descriptions'
-- 'get_system_uptime'
+- 'test_module_1'
 
 '''
 
 MODULE_BASE_TEXT = '''#! /usr/bin/env python
 
-# Created by moss-ctrl.
+# Created by mcli.
 # This file should be used as a template for any user created modules.
 
 from moss import ModuleResult, execute_device_operation, register
@@ -58,7 +56,7 @@ from moss import ModuleResult, execute_device_operation, register
 PLATFORM = ''
 
 @register(platform = PLATFORM)
-def module_name(connection, context):
+def module_name(connection, store):
     return ModuleResult.success
 
 

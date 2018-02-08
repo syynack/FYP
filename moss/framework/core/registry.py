@@ -85,7 +85,7 @@ def _run_registered_device_operation(platform, operation, connection, **kwargs):
     return device_operation_result
 
 
-def _run_registered_module(platform, operation, connection, context):
+def _run_registered_module(platform, operation, connection, store):
     '''
     Summary:
     Wrapper to be used internally to run modules through the registry.
@@ -94,18 +94,18 @@ def _run_registered_module(platform, operation, connection, context):
     platform        string, platform the operation is categorised by
     operation       string, operation to be run
     connection      netmiko SSH obj, connection to used to run the operation
-    context         dict, current context of the task
+    store           dict, current store of the task
     '''
 
     log('Attempting to run module {}'.format(operation))
 
     try:
-        module_result = registered_operations['modules'][platform][operation](connection, context)
+        module_result = registered_operations['modules'][platform][operation](connection, store)
     except KeyError as e:
         raise RegisteredModuleError, e
 
     frame = inspect.currentframe()
-    context = frame.f_locals['context']
+    store = frame.f_locals['store']
 
     if isinstance(module_result, dict):
         pass
@@ -116,7 +116,7 @@ def _run_registered_module(platform, operation, connection, context):
 
     log('Successfully ran module {}'.format(operation))
     module_result.update({'uuid': str(uuid.uuid4())})
-    module_result.update({'context': context})
+    module_result.update({'store': store})
 
     _log_operation_to_file(platform, operation, module_result)
 

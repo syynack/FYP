@@ -86,11 +86,11 @@ class Module():
     with the ability to run the module through the registry, and print information.
     '''
 
-    def __init__(self, connection = None, module = '', next_module = '', context = {}):
+    def __init__(self, connection = None, module = '', next_module = '', store = {}):
         self.connection = connection
         self.module = module
         self.next_module = next_module
-        self.context = context
+        self.store = store
 
 
     def run(self):
@@ -104,7 +104,7 @@ class Module():
         self.module_start_data = self._module_start_signals(self.module)
 
         try:
-            module_result = _run_registered_module(self.connection.device_type, self.module, self.connection, self.context)
+            module_result = _run_registered_module(self.connection.device_type, self.module, self.connection, self.store)
         except AttributeError as e:
             raise ModuleResultError, e
 
@@ -122,11 +122,11 @@ class Module():
 
     def _module_result(self, module_result):
         result = module_result['result']
-        context = module_result['context']
+        store = module_result['store']
 
         result_dict = {
             'result': result,
-            'context': context,
+            'store': store,
             'end_time': timer(),
             'run_time': timer() - self.module_start_data['start_time'],
             'end_date_time': str(datetime.now())

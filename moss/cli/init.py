@@ -4,7 +4,7 @@ import click
 import os
 
 from moss.framework.utils import edit_file
-from moss.framework.text import ENDPOINTS_BASE_TEXT, TASK_BASE_TEXT
+from moss.framework.text import TARGETS_BASE_TEXT, TASK_BASE_TEXT
 
 
 @click.command(short_help = 'Initialise a directory with base files')
@@ -17,10 +17,10 @@ def init():
     .moss directory is created to store output of task and in future possibly logging.
     '''
 
-    files = ['endpoints', 'task']
+    files = ['targets.yml', 'task.yml']
     text_mapping = {
-        'endpoints': ENDPOINTS_BASE_TEXT,
-        'task': TASK_BASE_TEXT
+        'targets.yml': TARGETS_BASE_TEXT,
+        'task.yml': TASK_BASE_TEXT
     }
 
     for filename in files:

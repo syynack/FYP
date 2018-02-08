@@ -13,7 +13,7 @@ class Connection(object):
     Paramater defaults set as per http://netmiko.readthedocs.io/en/latest/classes/base_connection.html
 
     Takes:
-    device_type:        string, running OS on the device e.g. linux, cisco_ios, juniper
+    vendor:             string, running OS on the device e.g. linux, cisco_ios, juniper
     ip:                 string, IPv4/v6 address of target device
     username:           string, username to authenticate against
     password:           string, password to authenticate with
@@ -26,8 +26,8 @@ class Connection(object):
 
     '''
 
-    def __init__(self, device_type='', ip='', username='', password='', port=22, timeout=20, session_timeout=60):
-        self.device_type = device_type
+    def __init__(self, vendor='', ip='', username='', password='', port=22, timeout=20, session_timeout=60):
+        self.vendor = vendor
         self.ip = ip
         self.username = username
         self.password = password
@@ -47,7 +47,7 @@ class Connection(object):
 
         try:
             connection = ConnectHandler(
-                device_type = self.device_type,
+                device_type = self.vendor,
                 ip = self.ip,
                 username = self.username,
                 password = self.password,

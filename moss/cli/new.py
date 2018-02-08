@@ -5,7 +5,7 @@ import sys
 import os
 
 from moss.framework.utils import edit_file
-from moss.framework.text import TASK_BASE_TEXT, ENDPOINTS_BASE_TEXT, MODULE_BASE_TEXT
+from moss.framework.text import TASK_BASE_TEXT, TARGETS_BASE_TEXT, MODULE_BASE_TEXT
 
 def _create_file(name, contents):
     '''
@@ -34,19 +34,19 @@ def _edit_file(name, contents):
     print '{} already exists.'.format(name)
 
 
-@click.command(short_help = 'Create new endpoints template')
+@click.command(short_help = 'Create new targets template')
 @click.option('-e', '--edit', is_flag=True, help = 'Edit the template now')
-@click.option('-o', '--output', default='endpoints', help = 'Filename for output file')
-def endpoints(edit, output):
+@click.option('-o', '--output', default='targets', help = 'Filename for output file')
+def targets(edit, output):
     '''
     Summary:
-    Creates a new endpoints file and populates it.
+    Creates a new targets file and populates it.
     '''
 
     if edit:
-        _edit_file(output, ENDPOINTS_BASE_TEXT)
+        _edit_file(output, TARGETS_BASE_TEXT)
 
-    _create_file(output, ENDPOINTS_BASE_TEXT)
+    _create_file(output, TARGETS_BASE_TEXT)
 
 
 @click.command(short_help = 'Create new module template')
@@ -84,6 +84,6 @@ def new():
     pass
 
 
-new.add_command(endpoints)
+new.add_command(targets)
 new.add_command(module)
 new.add_command(task)
