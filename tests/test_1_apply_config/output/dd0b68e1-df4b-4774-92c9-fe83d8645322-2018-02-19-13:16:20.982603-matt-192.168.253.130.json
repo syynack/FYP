@@ -1,0 +1,42 @@
+{
+    "end_date_time": "2018-02-19 13:16:25.585510",
+    "end_time": 1519046185.585508,
+    "results": {
+        "modules": [
+            {
+                "cisco_ios_apply_configuration": {
+                    "result": "success",
+                    "stdout": [
+                        "config term",
+                        "Enter configuration commands, one per line.  End with CNTL/Z.",
+                        "R1(config)#router ospf 1",
+                        "R1(config-router)#router-id 1.1.1.1",
+                        "R1(config-router)#network 192.168.253.129 255.255.255.0 area 0",
+                        "R1(config-router)#end",
+                        "R1#"
+                    ],
+                    "uuid": "8e3cbd0e-a33c-406e-bc9f-e7e869140016",
+                    "write_config": false,
+                    "write_config_output": null
+                },
+                "end_date_time": "2018-02-19 13:16:25.585254",
+                "end_time": 1519046185.58525,
+                "module": "test_module_1",
+                "next_module": "",
+                "result": "success",
+                "run_time": 4.602529048919678,
+                "start_date_time": "2018-02-19 13:16:20.982724",
+                "start_time": 1519046180.982722,
+                "store": {},
+                "uuid": "527ea562-2f5d-4efd-b075-79d2baf8a331"
+            }
+        ]
+    },
+    "run_time": 4.602917909622192,
+    "start_date_time": "2018-02-19 13:16:20.982603",
+    "start_hostname": "MacBook-Pro.home",
+    "start_time": 1519046180.982598,
+    "start_user": "matt",
+    "target": "192.168.253.130",
+    "uuid": "dd0b68e1-df4b-4774-92c9-fe83d8645322"
+}
