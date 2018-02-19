@@ -149,12 +149,14 @@ def _construct_stdout(start_data):
     for item in links_data['links']:
         links_keys.append(item)
 
-    for module_key, module_value in stdout_data['module_results'].iteritems():
-        if module_key in links_keys:
-            for index, module in enumerate(start_data['results']['modules']):
-                if module['module'] == module_key:
-                    golden_key = links_data['links'][module_key]
-                    start_data['results']['modules'][index][golden_key] = stdout_data['module_results'].get(golden_key)
+    for link_key in links_keys:
+        per_module_stdout = {}
+        for item in links_data['links'][link_key]:
+            per_module_stdout[item] = stdout_data["module_results"][item]
+
+        for index, module in enumerate(start_data["results"]["modules"]):
+            if module["module"] == link_key:
+                start_data['results']['modules'][index].update(per_module_stdout)
 
     end_data = _task_end_signals(start_data)
     end_data.update({'uuid': str(uuid.uuid4())})

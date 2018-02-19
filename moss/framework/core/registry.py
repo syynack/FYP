@@ -38,10 +38,6 @@ def _log_operation_to_file(platform, operation, module_result):
     curframe = inspect.currentframe()
     current_frame = inspect.getouterframes(curframe, 2)[3][3]
 
-    file_data = {}
-    file_data[operation] = {}
-    file_data[operation].update(module_result)
-
     if not os.path.exists('output'):
         os.makedirs('output')
     
@@ -51,15 +47,21 @@ def _log_operation_to_file(platform, operation, module_result):
     with open('output/.stdout.json', 'a') as f:
         pass
 
-    for key, index in registered_operations['modules'][platform].iteritems():
-        if current_frame in key:
-            with open('output/.links.json', 'r') as temp_links_file:
-                links_data = json.load(temp_links_file)
+    with open('output/.links.json', 'r') as temp_links_file:
+        links_data = json.load(temp_links_file)
 
-            links_data['links'].update({current_frame: operation})
+    if current_frame not in links_data['links']:
+        links_data['links'].update({current_frame: []})
 
-            with open('output/.links.json', 'w') as temp_links_file:
-                json.dump(links_data, temp_links_file, indent = 4)
+    operation = str(len(links_data['links'][current_frame])) + '_' + operation
+    links_data['links'][current_frame].append(operation)
+
+    with open('output/.links.json', 'w') as temp_links_file:
+        json.dump(links_data, temp_links_file, indent = 4)
+
+    file_data = {}
+    file_data[operation] = {}
+    file_data[operation].update(module_result)
 
     with open('output/.stdout.json', 'r') as temp_module_output:
         module_data = json.load(temp_module_output)
