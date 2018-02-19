@@ -3,7 +3,7 @@
 from moss.framework.decorators import register
 
 @register(platform = 'cisco_ios', group = 'devops')
-def cisco_ios_apply_configuration(connection, config_statements, write_config = False):
+def cisco_ios_apply_configuration(connection, config_statements):
     if not isinstance(config_statements, list):
         return {
             'result': 'fail',
@@ -18,16 +18,7 @@ def cisco_ios_apply_configuration(connection, config_statements, write_config = 
             'stdout': output
         }
 
-    write_config_output = None
-
-    if write_config:
-        write_config_output = connection.send_command_timing('copy running-configuration startup-configuration')
-        if 'Destination filename' in write_config_output:
-            write_config_output += connection.send_command_timing('\n')
-
     return {
         'result': 'success',
-        'write_config': write_config,
-        'write_config_output': None if write_config_output is None else write_config_output,
         'stdout': output.splitlines()
     }
