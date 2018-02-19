@@ -9,6 +9,12 @@ def cisco_ios_show_interfaces(connection):
     command = 'show interfaces'
     output = connection.send_command(command)
 
+    if output is None or 'Unknown' in output:
+        return {
+            "result": "fail",
+            "reason": output
+        }
+
     stdout = {}
     first_regex = '(?P<name>.*)\sis\s(?P<operational_status>(up|down)),\sline\sprotocol\sis\s(?P<line_status>(up|down))\s+'
     regex_list = [
