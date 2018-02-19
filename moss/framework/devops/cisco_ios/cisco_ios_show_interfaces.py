@@ -15,9 +15,10 @@ def cisco_ios_show_interfaces(connection):
             "reason": output
         }
 
-    stdout = {}
-    first_regex = '(?P<name>.*)\sis\s(?P<operational_status>(up|down)),\sline\sprotocol\sis\s(?P<line_status>(up|down))\s+'
+    stdout = []
+    interface_dict = {}
     regex_list = [
+        '(?P<name>.*)\sis\s(?P<operational_status>[^,]+),\sline\sprotocol\sis\s(?P<line_status>[^,]+)\s+',
         'Hardware\sis\s(?P<hardware>[^,]+),\saddress\sis\s(?P<hardware_address>[^\s]+)',
         'Internet\saddress\sis\s(?P<address>[^\s]+)',
         'MTU\s(?P<mtu>[^,]+),\sBW\s(?P<bandwidth>[^,]+),\sDLY\s(?P<delay>[^,]+)',
@@ -32,23 +33,19 @@ def cisco_ios_show_interfaces(connection):
 
     for line in output.splitlines():
         if 'line protocol' in line:
-            data = re.search(first_regex, line)
+            if interface_dict:
+                stdout.append(interface_dict)
+            interface_dict = {}
+        for regex in regex_list:
+            data = re.search(regex, line)
             if data is not None:
                 data = data.groupdict()
-                interface_name = data.get('name')
-                stdout[interface_name] = {}
-                stdout[interface_name].update(data)
-        else:
-            for regex in regex_list:
-                data = re.search(regex, line)
-                if data is not None:
-                    data = data.groupdict()
-                    stdout[interface_name].update(data)
+                interface_dict.update(data)
 
-    for stdout_key, stdout_value in stdout.iteritems():
-        for interface_key, interface_value in stdout_value.iteritems():
+    for interface in stdout:
+        for key, value in interface.iteritems():
             try:
-                stdout[stdout_key][interface_key] = int(interface_value)
+                interface[key] = int(value)
             except ValueError as e:
                 pass
 

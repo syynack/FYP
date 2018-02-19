@@ -1,4 +1,4 @@
-2018-02-19 18:42:26,872 moss INFO Attempting to run module test_module_1
-2018-02-19 18:42:26,873 moss INFO Attempting to run device operation cisco_ios_show_interfaces
-2018-02-19 18:42:28,104 moss INFO Successfully ran device operation cisco_ios_show_interfaces
-2018-02-19 18:42:28,148 moss INFO Successfully ran module test_module_1
+2018-02-19 20:02:33,400 moss INFO Attempting to run module test_module_1
+2018-02-19 20:02:33,401 moss INFO Attempting to run device operation cisco_ios_show_interfaces
+2018-02-19 20:02:34,647 moss INFO Successfully ran device operation cisco_ios_show_interfaces
+2018-02-19 20:02:34,685 moss INFO Successfully ran module test_module_1
