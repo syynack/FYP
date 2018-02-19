@@ -1,0 +1,8 @@
+# This file is used to define task stages to be executed within the task.
+
+# Task
+task:
+- 'get_operational_interfaces'
+- 'check_current_ospf_timers'
+- 'apply_new_ospf_timers'
+
