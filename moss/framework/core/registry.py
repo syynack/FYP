@@ -42,6 +42,15 @@ def _log_operation_to_file(platform, operation, module_result):
     file_data[operation] = {}
     file_data[operation].update(module_result)
 
+    if not os.path.exists('output'):
+        os.makedirs('output')
+    
+    with open('output/.links.json', 'a') as f:
+        pass
+
+    with open('output/.stdout.json', 'a') as f:
+        pass
+
     for key, index in registered_operations['modules'][platform].iteritems():
         if current_frame in key:
             with open('output/.links.json', 'r') as temp_links_file:
