@@ -5,14 +5,18 @@ import re
 from moss.framework.decorators import register
 
 @register(platform = 'cisco_ios', group = 'devops')
-def cisco_ios_check_configuration(connection, config_statements):
+def cisco_ios_check_configuration(connection, config_statements, area = None):
     if not isinstance(config_statements, list):
         return {
             "result": "fail",
             "reason": "config_statements should be a list"
         }
 
-    command = 'show running-config'
+    if not area:
+        command = 'show running-config'
+    else:
+        command = 'show running-config | section {}'.format(area)
+
     output = connection.send_command(command)
 
     if output is None or 'Unknown' in output:
