@@ -1,0 +1,4 @@
+2018-02-19 19:34:02,059 moss INFO Attempting to run module test_module_1
+2018-02-19 19:34:02,059 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-02-19 19:34:03,482 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-02-19 19:34:03,529 moss INFO Successfully ran module test_module_1
