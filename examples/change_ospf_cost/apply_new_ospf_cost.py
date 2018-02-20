@@ -18,22 +18,23 @@ from moss import ModuleResult, execute_device_operation, register
 PLATFORM = 'cisco_ios'
 
 @register(platform = PLATFORM)
-def get_operational_interfaces(connection, store):
-    current_interfaces = execute_device_operation('cisco_ios_show_interfaces', connection)
+def apply_new_ospf_cost(connection, store):
+    ''' Applies new cost configuration to interfaces. '''
 
-    if current_interfaces["result"] == "fail":
-        return ModuleResult.fail
+    for operational_interface in store["operational_interfaces"]:
+        config_statements = ['interface {}'.format(operational_interface)] + store["config_statements"]
 
-    store["operational_interfaces"] = []
+        apply_config_output = execute_device_operation(
+            'cisco_ios_apply_configuration', 
+            connection,
+            config_statements = config_statements
+        )
 
-    for interface in current_interfaces["stdout"]:
-        if interface["operational_status"] == "up" and interface["line_status"] == "up":
-            store["operational_interfaces"].append(interface["name"])
-
-    if len(store["operational_interfaces"]) == 0:
-        return ModuleResult.end
+        if apply_config_output["result"] == "fail":
+            return ModuleResult.fail
 
     return ModuleResult.success
-            
+
+        
 
 

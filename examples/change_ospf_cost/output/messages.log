@@ -1,0 +1,22 @@
+2018-02-20 21:00:13,640 moss INFO Attempting to run module get_operational_interfaces
+2018-02-20 21:00:13,640 moss INFO Attempting to run device operation cisco_ios_show_interfaces
+2018-02-20 21:00:14,880 moss INFO Successfully ran device operation cisco_ios_show_interfaces
+2018-02-20 21:00:14,919 moss INFO Successfully ran module get_operational_interfaces
+2018-02-20 21:00:14,921 moss INFO Attempting to run module precheck_configured_ospf_cost
+2018-02-20 21:00:14,922 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-02-20 21:00:16,548 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-02-20 21:00:16,555 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-02-20 21:00:18,183 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-02-20 21:00:18,187 moss INFO Successfully ran module precheck_configured_ospf_cost
+2018-02-20 21:00:18,190 moss INFO Attempting to run module apply_new_ospf_cost
+2018-02-20 21:00:18,190 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-02-20 21:00:22,207 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-02-20 21:00:22,215 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-02-20 21:00:26,228 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-02-20 21:00:26,236 moss INFO Successfully ran module apply_new_ospf_cost
+2018-02-20 21:00:26,239 moss INFO Attempting to run module postcheck_configured_ospf_cost
+2018-02-20 21:00:26,240 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-02-20 21:00:27,865 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-02-20 21:00:27,868 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-02-20 21:00:29,488 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-02-20 21:00:29,492 moss INFO Successfully ran module postcheck_configured_ospf_cost

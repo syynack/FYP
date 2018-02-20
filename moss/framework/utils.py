@@ -51,7 +51,7 @@ def start_header(module_order):
 
 
 def post_device(name):
-    print colour('\n :: Endpoint: {}'.format(name), 'white', bold=True)
+    print colour('\n :: Target: {}'.format(name), 'white', bold=True)
 
 
 def module_start_header(task):

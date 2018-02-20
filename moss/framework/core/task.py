@@ -150,12 +150,17 @@ def _construct_stdout(start_data):
         links_keys.append(item)
 
     for link_key in links_keys:
-        per_module_stdout = {}
+        per_module_stdout = {"operations": []}
         for item in links_data['links'][link_key]:
-            per_module_stdout[item] = stdout_data["module_results"][item]
+            stdout_data["module_results"][item].update({"name": item})
+            per_module_stdout["operations"].append(stdout_data["module_results"][item])
 
         for index, module in enumerate(start_data["results"]["modules"]):
             if module["module"] == link_key:
+                for key, value in stdout_data['module_results'].iteritems():
+                    if key == link_key:
+                        per_module_stdout.update(value)
+
                 start_data['results']['modules'][index].update(per_module_stdout)
 
     end_data = _task_end_signals(start_data)

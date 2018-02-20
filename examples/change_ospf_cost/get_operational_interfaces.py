@@ -18,25 +18,25 @@ from moss import ModuleResult, execute_device_operation, register
 PLATFORM = 'cisco_ios'
 
 @register(platform = PLATFORM)
-def apply_new_ospf_timers(connection, store):
-    for operational_interface in store["operational_interfaces"]:
-        config_statements = [
-            'interface {}'.format(operational_interface),
-            'ip ospf dead-interval 4',
-            'ip ospf hello-interval 1'
-        ]
+def get_operational_interfaces(connection, store):
+    ''' Finds currently up/up interfaces on the target device and stores interface names. '''
 
-        apply_config_output = execute_device_operation(
-            'cisco_ios_apply_configuration', 
-            connection,
-            config_statements = config_statements
-        )
+    current_interfaces = execute_device_operation('cisco_ios_show_interfaces', connection)
 
-        if apply_config_output["result"] == "fail":
-            return ModuleResult.fail
+    if current_interfaces["result"] == "fail":
+        return ModuleResult.fail
 
+    operational_interfaces = []
+
+    for interface in current_interfaces["stdout"]:
+        if interface["operational_status"] == "up" and interface["line_status"] == "up":
+            operational_interfaces.append(interface["name"])
+
+    if len(operational_interfaces) == 0:
+        return ModuleResult.end
+
+    store["operational_interfaces"] = operational_interfaces
     return ModuleResult.success
-
-        
+            
 
 

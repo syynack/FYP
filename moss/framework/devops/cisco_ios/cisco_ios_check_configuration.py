@@ -25,7 +25,7 @@ def cisco_ios_check_configuration(connection, config_statements, area = None):
             "reason": output
         }
 
-    stdout = {"present_config_statements": []}
+    stdout = {"present_config_statements": [], "area": area}
 
     for line in output.splitlines():
         if line.strip() in config_statements:

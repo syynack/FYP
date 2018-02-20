@@ -50,10 +50,15 @@ def _log_operation_to_file(platform, operation, module_result):
     with open('output/.links.json', 'r') as temp_links_file:
         links_data = json.load(temp_links_file)
 
+    with open('output/.stdout.json', 'r') as temp_module_output:
+        module_data = json.load(temp_module_output)
+
     if current_frame not in links_data['links']:
         links_data['links'].update({current_frame: []})
 
-    operation = str(len(links_data['links'][current_frame])) + '_' + operation
+    if current_frame != '_run_task':
+        operation = current_frame + '_' + str(len(links_data['links'][current_frame])) + '_' + operation
+
     links_data['links'][current_frame].append(operation)
 
     with open('output/.links.json', 'w') as temp_links_file:
@@ -62,9 +67,6 @@ def _log_operation_to_file(platform, operation, module_result):
     file_data = {}
     file_data[operation] = {}
     file_data[operation].update(module_result)
-
-    with open('output/.stdout.json', 'r') as temp_module_output:
-        module_data = json.load(temp_module_output)
 
     module_data['module_results'].update(file_data)
 
@@ -110,10 +112,8 @@ def _run_registered_module(platform, operation, connection, store):
 
     log('Attempting to run module {}'.format(operation))
 
-    try:
-        module_result = registered_operations['modules'][platform][operation](connection, store)
-    except KeyError as e:
-        raise RegisteredModuleError, e
+
+    module_result = registered_operations['modules'][platform][operation](connection, store)
 
     frame = inspect.currentframe()
     store = frame.f_locals['store']
