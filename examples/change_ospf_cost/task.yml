@@ -3,6 +3,7 @@
 # Task
 task:
 - 'get_operational_interfaces'
-- 'check_current_ospf_timers'
-- 'apply_new_ospf_timers'
+- 'precheck_configured_ospf_cost'
+- 'apply_new_ospf_cost'
+- 'postcheck_configured_ospf_cost'
 

@@ -18,28 +18,29 @@ from moss import ModuleResult, execute_device_operation, register
 PLATFORM = 'cisco_ios'
 
 @register(platform = PLATFORM)
-def check_current_ospf_timers(connection, store):
-    config_statements = [
-        'ip ospf dead-interval 4',
-        'ip ospf hello-interval 1'
+def precheck_configured_ospf_cost(connection, store):
+    ''' Checks if the correct OSPF cost is configured on stored interfaces. '''
+
+    store["config_statements"] = [
+        'ip ospf cost 65535'
     ]
 
     for operational_interface in store["operational_interfaces"]:
         current_ospf_timers_output = execute_device_operation(
             'cisco_ios_check_configuration',
             connection,
-            config_statements = config_statements,
+            config_statements = store["config_statements"],
             area = 'interface {}'.format(operational_interface)
         )
 
         if current_ospf_timers_output["result"] == "fail":
             return ModuleResult.fail
         
-        if not current_ospf_timers_output["stdout"]["present_config_statements"]:
-            return ModuleResult.success
-
-        store["operational_interfaces"].remove(operational_interface)
-        return ModuleResult.success
+        for statement in current_ospf_timers_output["stdout"]["present_config_statements"]:
+            if statement in store["config_statements"]:
+                store["operational_interfaces"].remove(operational_interface)
+    
+    return ModuleResult.success
 
 
 
