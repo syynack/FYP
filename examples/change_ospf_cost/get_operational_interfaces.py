@@ -37,6 +37,3 @@ def get_operational_interfaces(connection, store):
 
     store["operational_interfaces"] = operational_interfaces
     return ModuleResult.success
-            
-
-

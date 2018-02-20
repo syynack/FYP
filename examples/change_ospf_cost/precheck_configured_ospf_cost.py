@@ -25,6 +25,8 @@ def precheck_configured_ospf_cost(connection, store):
         'ip ospf cost 65535'
     ]
 
+    updated_interfaces = store["operational_interfaces"]
+
     for operational_interface in store["operational_interfaces"]:
         current_ospf_timers_output = execute_device_operation(
             'cisco_ios_check_configuration',
@@ -36,14 +38,8 @@ def precheck_configured_ospf_cost(connection, store):
         if current_ospf_timers_output["result"] == "fail":
             return ModuleResult.fail
         
-        for statement in current_ospf_timers_output["stdout"]["present_config_statements"]:
-            if statement in store["config_statements"]:
-                store["operational_interfaces"].remove(operational_interface)
-    
+        if current_ospf_timers_output["stdout"]["present_config_statements"] == store['config_statements']:
+            updated_interfaces.remove(operational_interface)
+
+    store["operational_interfaces"] = updated_interfaces
     return ModuleResult.success
-
-
-
-    
-
-

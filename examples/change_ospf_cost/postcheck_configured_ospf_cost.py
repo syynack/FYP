@@ -41,9 +41,3 @@ def postcheck_configured_ospf_cost(connection, store):
         return ModuleResult.success
 
     return ModuleResult.fail
-
-
-
-    
-
-

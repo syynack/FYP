@@ -34,7 +34,3 @@ def apply_new_ospf_cost(connection, store):
             return ModuleResult.fail
 
     return ModuleResult.success
-
-        
-
-
