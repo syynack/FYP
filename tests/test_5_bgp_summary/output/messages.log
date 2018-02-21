@@ -1,0 +1,4 @@
+2018-02-21 19:07:11,046 moss INFO Attempting to run module test_module_1
+2018-02-21 19:07:11,046 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-02-21 19:07:11,870 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-02-21 19:07:11,913 moss INFO Successfully ran module test_module_1

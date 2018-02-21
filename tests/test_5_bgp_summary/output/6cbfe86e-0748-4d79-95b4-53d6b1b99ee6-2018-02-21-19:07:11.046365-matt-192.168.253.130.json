@@ -1,0 +1,56 @@
+{
+    "end_date_time": "2018-02-21 19:07:11.915008",
+    "end_time": 1519240031.915007,
+    "results": {
+        "modules": [
+            {
+                "delay": 0,
+                "end_date_time": "2018-02-21 19:07:11.914780",
+                "end_time": 1519240031.914777,
+                "module": "test_module_1",
+                "name": "test_module_1",
+                "next_module": "",
+                "operations": [
+                    {
+                        "name": "test_module_1_0_cisco_ios_get_bgp_summary",
+                        "result": "success",
+                        "stdout": {
+                            "bgp_table_version": 1,
+                            "local_as": 1,
+                            "neighbors": [
+                                {
+                                    "as_numbner": 2,
+                                    "bgp_version": 4,
+                                    "in_q": 0,
+                                    "mgg_recv": 11,
+                                    "msg_sent": 12,
+                                    "neighbor_ip": "10.0.0.1",
+                                    "out_q": 0,
+                                    "state_prefix_received": 0,
+                                    "table_version": 1,
+                                    "up_down": "00:08:19"
+                                }
+                            ],
+                            "router_id": "192.168.253.130",
+                            "routing_table_version": 1
+                        },
+                        "uuid": "9640d361-f793-4f89-b2a6-20e2765319a2"
+                    }
+                ],
+                "result": "success",
+                "run_time": 0.8682971000671387,
+                "start_date_time": "2018-02-21 19:07:11.046482",
+                "start_time": 1519240031.04648,
+                "store": {},
+                "uuid": "5dc10092-d7be-45fd-bd3c-d3c5d74273fd"
+            }
+        ]
+    },
+    "run_time": 0.8686568737030029,
+    "start_date_time": "2018-02-21 19:07:11.046365",
+    "start_hostname": "MacBook-Pro.home",
+    "start_time": 1519240031.046359,
+    "start_user": "matt",
+    "target": "192.168.253.130",
+    "uuid": "6cbfe86e-0748-4d79-95b4-53d6b1b99ee6"
+}
