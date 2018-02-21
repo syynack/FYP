@@ -4,7 +4,7 @@ import re
 
 from moss.framework.decorators import register
 
-@register(platform = 'cisco_ios', group = 'devops')
+@register(vendor = 'cisco_ios')
 def cisco_ios_check_configuration(connection, config_statements, area = None):
     if not isinstance(config_statements, list):
         return {

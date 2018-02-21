@@ -4,7 +4,7 @@ from moss.framework.decorators import register
 
 import re
 
-@register(platform = 'cisco_ios', group = 'devops')
+@register(vendor = 'cisco_ios')
 def cisco_ios_ping(connection, destination = None, source = None, df = False):
     if destination is None:
         return {

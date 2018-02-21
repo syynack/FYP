@@ -4,7 +4,7 @@ import re
 
 from moss.framework.decorators import register
 
-@register(platform = 'cisco_ios')
+@register(vendor = 'cisco_ios')
 def cisco_ios_get_facts(connection):
     if connection.check_enable_mode() == False:
         connection.enable()

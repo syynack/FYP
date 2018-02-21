@@ -4,7 +4,7 @@ import re
 
 from moss.framework.decorators import register
 
-@register(platform = 'cisco_ios', group = 'devops')
+@register(vendor = 'cisco_ios')
 def cisco_ios_show_interfaces(connection):
     command = 'show interfaces'
     output = connection.send_command(command)

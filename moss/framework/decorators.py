@@ -2,7 +2,7 @@
 
 from moss.framework.core.registry import registry, _run_registered_device_operation
 
-def register(platform = None, group = 'modules'):
+def register(vendor = None, group = 'modules'):
     '''
     Summary:
     Takes modules registered with the @register decorator. Aim is to only allow
@@ -18,13 +18,13 @@ def register(platform = None, group = 'modules'):
     '''
 
     def decorator(func):
-        if isinstance(platform, str):
+        if isinstance(vendor, str):
             if 'moss.framework.devops.' in str(func.__module__):
-                registry('devops', platform, func)
+                registry('devops', vendor, func)
             else:
-                registry(group, platform, func)
-        elif isinstance(platform, list):
-            for element in platform:
+                registry(group, vendor, func)
+        elif isinstance(vendor, list):
+            for element in vendor:
                 if 'moss.framework.devops.' in str(func.__module__):
                     registry('devops', element, func)
                 else:

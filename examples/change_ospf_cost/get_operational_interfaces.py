@@ -15,9 +15,9 @@ from moss import ModuleResult, execute_device_operation, register
 # be marked as a success if not specified otherwise.
 #
 
-PLATFORM = 'cisco_ios'
+VENDOR = 'cisco_ios'
 
-@register(platform = PLATFORM)
+@register(vendor = VENDOR)
 def get_operational_interfaces(connection, store):
     ''' Finds currently up/up interfaces on the target device and stores interface names. '''
 

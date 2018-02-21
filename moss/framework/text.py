@@ -16,7 +16,7 @@ global_username: ''
 # Define a global vendor if all the targets run the same operating system
 global_vendor: ''
 
-# Define endpoint information
+# Define target information
 targets:
 
 # Example
@@ -53,9 +53,9 @@ from moss import ModuleResult, execute_device_operation, register
 # be marked as a success if not specified otherwise.
 #
 
-PLATFORM = ''
+VENDOR = ''
 
-@register(platform = PLATFORM)
+@register(vendor = VENDOR)
 def module_name(connection, store):
     return ModuleResult.success
 
