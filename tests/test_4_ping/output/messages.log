@@ -1,4 +1,6 @@
-2018-02-21 16:31:24,140 moss INFO Attempting to run module test_module_1
-2018-02-21 16:31:24,140 moss INFO Attempting to run device operation cisco_ios_ping
-2018-02-21 16:31:32,033 moss INFO Successfully ran device operation cisco_ios_ping
-2018-02-21 16:31:32,076 moss INFO Successfully ran module test_module_1
+2018-02-23 15:48:14,922 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-02-23 15:48:15,684 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-02-23 15:48:15,725 moss INFO Attempting to run module test_module_1
+2018-02-23 15:48:15,725 moss INFO Attempting to run device operation cisco_ios_ping
+2018-02-23 15:48:23,245 moss INFO Successfully ran device operation cisco_ios_ping
+2018-02-23 15:48:23,249 moss INFO Successfully ran module test_module_1

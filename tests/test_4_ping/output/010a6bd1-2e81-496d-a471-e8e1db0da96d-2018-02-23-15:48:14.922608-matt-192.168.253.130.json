@@ -1,0 +1,72 @@
+{
+    "device_facts": {
+        "result": "success",
+        "stdout": {
+            "bytes_of_memory": "249856K/12288K",
+            "compiled": "Wed 18-Aug-10 08:18",
+            "cpu": "R7000",
+            "cpu_clock": "350MHz",
+            "dram_configuration": "64 bits",
+            "hostname": "R1",
+            "interfaces": [
+                {
+                    "count": "18",
+                    "interface_type": "FastEthernet"
+                },
+                {
+                    "count": "4",
+                    "interface_type": "Serial"
+                }
+            ],
+            "model": "Cisco 3745",
+            "nvram": "151K",
+            "parity": "enabled",
+            "processor_board_id": "FTX0945W0MY",
+            "release_software": "fc1",
+            "software": "3700",
+            "software_package": "C3745-ADVIPSERVICESK9-M",
+            "software_version": "12.4(25d)",
+            "uptime": {}
+        },
+        "uuid": "9d46b345-c727-4669-8d2f-49f85b07223a"
+    },
+    "end_date_time": "2018-02-23 15:48:23.253316",
+    "end_time": 1519400903.253314,
+    "result": "fail",
+    "results": {
+        "modules": [
+            {
+                "end_date_time": "2018-02-23 15:48:23.252923",
+                "end_time": 1519400903.252918,
+                "module": "test_module_1",
+                "name": "test_module_1",
+                "next_module": "",
+                "operations": [
+                    {
+                        "name": "test_module_1_0_cisco_ios_ping",
+                        "result": "success",
+                        "stdout": {
+                            "echo_replies": 0,
+                            "echo_requests": 3,
+                            "success_rate": 0
+                        },
+                        "uuid": "9a9bb4a2-162f-4d45-8242-abaff93d5e08"
+                    }
+                ],
+                "result": "fail",
+                "run_time": 7.5276038646698,
+                "start_date_time": "2018-02-23 15:48:15.725317",
+                "start_time": 1519400895.725315,
+                "store": {},
+                "uuid": "27bce19d-38ad-464f-a454-ad61bd053311"
+            }
+        ]
+    },
+    "run_time": 8.330724000930786,
+    "start_date_time": "2018-02-23 15:48:14.922608",
+    "start_hostname": "MacBook-Pro.home",
+    "start_time": 1519400894.922602,
+    "start_user": "matt",
+    "target": "192.168.253.130",
+    "uuid": "010a6bd1-2e81-496d-a471-e8e1db0da96d"
+}

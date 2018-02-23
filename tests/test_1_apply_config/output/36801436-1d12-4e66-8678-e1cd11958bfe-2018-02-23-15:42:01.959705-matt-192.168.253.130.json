@@ -1,0 +1,77 @@
+{
+    "device_facts": {
+        "result": "success",
+        "stdout": {
+            "bytes_of_memory": "249856K/12288K",
+            "compiled": "Wed 18-Aug-10 08:18",
+            "cpu": "R7000",
+            "cpu_clock": "350MHz",
+            "dram_configuration": "64 bits",
+            "hostname": "R1",
+            "interfaces": [
+                {
+                    "count": "18",
+                    "interface_type": "FastEthernet"
+                },
+                {
+                    "count": "4",
+                    "interface_type": "Serial"
+                }
+            ],
+            "model": "Cisco 3745",
+            "nvram": "151K",
+            "parity": "enabled",
+            "processor_board_id": "FTX0945W0MY",
+            "release_software": "fc1",
+            "software": "3700",
+            "software_package": "C3745-ADVIPSERVICESK9-M",
+            "software_version": "12.4(25d)",
+            "uptime": {}
+        },
+        "uuid": "1b3b9001-77c7-4795-ae74-b451034c271c"
+    },
+    "end_date_time": "2018-02-23 15:42:07.312663",
+    "end_time": 1519400527.31266,
+    "result": "success",
+    "results": {
+        "modules": [
+            {
+                "delay": 0,
+                "end_date_time": "2018-02-23 15:42:07.312219",
+                "end_time": 1519400527.312214,
+                "module": "test_module_1",
+                "name": "test_module_1",
+                "next_module": "",
+                "operations": [
+                    {
+                        "name": "test_module_1_0_cisco_ios_apply_configuration",
+                        "result": "success",
+                        "stdout": [
+                            "config term",
+                            "Enter configuration commands, one per line.  End with CNTL/Z.",
+                            "R1(config)#router ospf 1",
+                            "R1(config-router)#router-id 1.1.1.1",
+                            "R1(config-router)#network 192.168.253.129 255.255.255.0 area 0",
+                            "R1(config-router)#end",
+                            "R1#"
+                        ],
+                        "uuid": "ad160b63-d46f-43f8-9eaa-c311193513e2"
+                    }
+                ],
+                "result": "success",
+                "run_time": 4.530047178268433,
+                "start_date_time": "2018-02-23 15:42:02.782171",
+                "start_time": 1519400522.782168,
+                "store": {},
+                "uuid": "48e43f59-7206-49db-bbc8-c43f87d774ae"
+            }
+        ]
+    },
+    "run_time": 5.3529791831970215,
+    "start_date_time": "2018-02-23 15:42:01.959705",
+    "start_hostname": "MacBook-Pro.home",
+    "start_time": 1519400521.959699,
+    "start_user": "matt",
+    "target": "192.168.253.130",
+    "uuid": "36801436-1d12-4e66-8678-e1cd11958bfe"
+}

@@ -1,8 +1,6 @@
-2018-02-19 13:14:13,344 moss INFO Attempting to run module test_module_1
-2018-02-19 13:14:13,344 moss INFO Attempting to run device operation cisco_ios_apply_configuration
-2018-02-19 13:14:22,792 moss INFO Successfully ran device operation cisco_ios_apply_configuration
-2018-02-19 13:14:22,835 moss INFO Successfully ran module test_module_1
-2018-02-19 13:16:20,982 moss INFO Attempting to run module test_module_1
-2018-02-19 13:16:20,983 moss INFO Attempting to run device operation cisco_ios_apply_configuration
-2018-02-19 13:16:25,537 moss INFO Successfully ran device operation cisco_ios_apply_configuration
-2018-02-19 13:16:25,584 moss INFO Successfully ran module test_module_1
+2018-02-23 15:42:01,959 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-02-23 15:42:02,742 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-02-23 15:42:02,782 moss INFO Attempting to run module test_module_1
+2018-02-23 15:42:02,782 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-02-23 15:42:07,305 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-02-23 15:42:07,310 moss INFO Successfully ran module test_module_1

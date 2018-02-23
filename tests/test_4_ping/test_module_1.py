@@ -15,11 +15,14 @@ from moss import ModuleResult, execute_device_operation, register
 # be marked as a success if not specified otherwise.
 #
 
-PLATFORM = 'cisco_ios'
+VENDOR = 'cisco_ios'
 
-@register(platform = PLATFORM)
+@register(vendor = VENDOR)
 def test_module_1(connection, store):
     output = execute_device_operation('cisco_ios_ping', connection, destination = '8.8.8.8')
+    if output["stdout"]["echo_replies"] != output["stdout"]["echo_requests"]:
+        return ModuleResult.fail
+
     return ModuleResult.success
 
 
