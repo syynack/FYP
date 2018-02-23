@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <title>Frontend Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Frontend</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </nav>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="content">
+        <div class="container">
+          <div class='container-fluid'> 
+            {% if json_data_unformatted.result == "success" %}
+              <div class="alert alert-success">
+                Task completed with a <strong>Success</strong> status.
+              </div>
+            {% elif json_data_unformatted.result == "end" %}
+              <div class="alert alert-info">
+                Task completed with an <strong>End</strong> status.
+              </div>
+            {% else %}
+              <div class="alert alert-danger">
+                Task completed with a <strong>Fail</strong> status.
+              </div>
+            {% endif %}
+            <hr>
+            <div class='row'>
+              <div class='col-sm-4'><h5><strong>Target device:</strong>   {{ json_data_unformatted.target }}</h5></div>
+              <div class='col-sm-4'><h5><strong>User:</strong>   {{ json_data_unformatted.start_user }}</h5></div>
+              <div class='col-sm-4'><h5><strong>Host:</strong>   {{ json_data_unformatted.start_hostname }}</h5></div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-4'><h5><strong>Hostname:</strong>   {{ json_data_unformatted.device_facts.stdout.hostname }}</h5></div>
+              <div class='col-sm-4'><h5><strong>Software:</strong>   {{ json_data_unformatted.device_facts.stdout.software_package }} {{ json_data_unformatted.device_facts.stdout.software_version }} {{ json_data_unformatted.device_facts.stdout.release_software }}</h5></div>
+              <div class='col-sm-4'><h5><strong>Model:</strong>   {{ json_data_unformatted.device_facts.stdout.model }}</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container-fluid">
+            <hr>
+            <h5><strong>Module Results:</strong></h5>
+            <div class="panel-group">
+            {% for module in json_data_unformatted.results.modules %}
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h5 class="panel-title">
+                  {% if module.result == "success" %}
+                    <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module }}</a><strong class="pull-right text-success">{{ module.result }}</strong>
+                  {% elif module.result == "fail" %}
+                    <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module }}</a><strong class="pull-right text-danger">{{ module.result }}</strong>
+                  {% elif module.result == "retry" %}
+                    <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module }}</a><strong class="pull-right text-info">{{ module.result }}</strong>
+                  {% elif module.result == "branch" %}
+                    <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module }}</a><strong class="pull-right text-primary">{{ module.result }}</strong>
+                  {% elif module.result == "end" %}
+                    <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module }}</a><strong class="pull-right text-success">{{ module.result }}</strong>
+                  {% endif %}
+                  </h5>
+                </div>
+                <div id="{{ module.module }}" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class='row'>
+                      <div class='col-sm-4'><h5><strong>Start time:</strong>   {{ module.start_date_time }}</h5></div>
+                      <div class='col-sm-4'><h5><strong>End time:</strong>   {{ module.end_date_time }}</h5></div>
+                      <div class='col-sm-4'><h5><strong>Run time:</strong>   {{ module.run_time }}</h5></div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-4'><h5><strong>Next module:</strong>   {{ module.next_module }}</h5></div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-4'><h5><strong>Device operations:</strong></h5></div>
+                        <div class='col-sm-12'>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Result</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {% for operation in module.operations %}
+                            <tr>
+                              <td><h5>{{ operation.name }}</h5></td>
+                              {% if operation.result == "success" %}
+                                <td><h5 class="text-success"><strong>{{ operation.result }}</strong></h5></td>
+                              {% elif operation.result == "fail" %}
+                                <td><h5 class="pull-right text-fail"><strong>{{ operation.result }}</strong></h5></td>
+                              {% endif %}
+                            </tr>
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container-fluid">
+          <hr>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#json_output">Raw Output</a>
+               </h4>
+            </div>
+              <div id="json_output" class="panel-collapse collapse">
+                <div class="panel-body">{{ json_data }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
