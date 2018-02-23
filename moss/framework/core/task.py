@@ -10,6 +10,7 @@ import uuid
 import json
 
 from moss.framework.core.connection import Connection
+from moss.framework.core.registry import _run_registered_device_operation
 from moss.framework.core.module import Module
 from moss.framework.utils import start_banner, start_header, timer, end_banner, write_json_to_file, create_task_start_temp_file, create_task_links_temp_file, post_device
 from datetime import datetime
@@ -187,6 +188,10 @@ def _run_task(connection, module_order):
     next_module = module_order[0]
     start_data = _task_start_signals(module_order)
     store = STORE
+    device_facts = _run_registered_device_operation(connection.device_type, connection.device_type + '_get_facts', connection)
+    start_data.update({
+        "device_facts": device_facts
+    })
 
     while next_module != '':
         module = Module(
@@ -209,6 +214,7 @@ def _run_task(connection, module_order):
             else:
                 next_module = module_order[module_index[0]]
 
+    start_data["result"] = start_data["results"]["modules"][-1]["result"]
     _construct_stdout(start_data)
 
 

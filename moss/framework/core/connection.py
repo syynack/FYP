@@ -34,6 +34,7 @@ class Connection():
         self.port = port
         self.timeout = timeout
         self.session_timeout = session_timeout
+        self.facts = {}
 
 
     def get_connection(self):
