@@ -18,7 +18,7 @@ def cisco_ios_show_interfaces(connection):
     stdout = []
     interface_dict = {}
     regex_list = [
-        '(?P<name>.*)\sis\s(?P<operational_status>[^,]+),\sline\sprotocol\sis\s(?P<line_status>[^,]+)\s+',
+        '(?P<name>.*)\sis\s(?P<operational_status>[^,]+),\sline\sprotocol\sis\s(?P<line_status>[^\n]+)',
         'Hardware\sis\s(?P<hardware>[^,]+),\saddress\sis\s(?P<hardware_address>[^\s]+)',
         'Internet\saddress\sis\s(?P<address>[^\s]+)',
         'MTU\s(?P<mtu>[^,]+),\sBW\s(?P<bandwidth>[^,]+),\sDLY\s(?P<delay>[^,]+)',
@@ -31,7 +31,7 @@ def cisco_ios_show_interfaces(connection):
         'Queueing\sstrategy:\s(?P<queueing_strategy>[^\n]+)'
     ]
 
-    for line in output.splitlines():
+    for index, line in enumerate(output.splitlines()):
         if 'line protocol' in line:
             if interface_dict:
                 stdout.append(interface_dict)
@@ -39,8 +39,9 @@ def cisco_ios_show_interfaces(connection):
         for regex in regex_list:
             data = re.search(regex, line)
             if data is not None:
-                data = data.groupdict()
-                interface_dict.update(data)
+                interface_dict.update(data.groupdict())
+        if index + 1 == len(output.splitlines()):
+            stdout.append(interface_dict)
 
     for interface in stdout:
         for key, value in interface.iteritems():
@@ -53,4 +54,3 @@ def cisco_ios_show_interfaces(connection):
         "result": "success",
         "stdout": stdout
     }
-

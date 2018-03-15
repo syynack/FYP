@@ -66,13 +66,13 @@ class Connection():
     def close(self, connection):
         '''
         Summary:
-        Function to close connection due to root connections to linux boxes not closing correctly
+        Function to close connection due to root 
+        connections to linux boxes not closing correctly
 
         '''
 
         if connection.username == 'root' and connection.device_type == 'linux':
             # Disconnecting from a Linux box with user root is currently not supported, see https://github.com/ktbyers/netmiko/issues/492
-            # if the issue is closed, matt was lazy. Please update this.
             return
 
         try:

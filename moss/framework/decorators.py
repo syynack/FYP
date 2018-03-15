@@ -2,7 +2,7 @@
 
 from moss.framework.core.registry import registry, _run_registered_device_operation
 
-def register(vendor = None, group = 'modules'):
+def register(vendor, group = 'modules'):
     '''
     Summary:
     Takes modules registered with the @register decorator. Aim is to only allow

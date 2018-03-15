@@ -10,7 +10,7 @@ from moss.framework.core.exceptions import RegisteredModuleError
 
 registered_operations = {}
 
-def registry(group, platform, func):
+def registry(group, vendor, func):
     '''
     Summary:
     Store functions from devops and user created module in the registry. That way
@@ -19,22 +19,22 @@ def registry(group, platform, func):
 
     Arguments:
     group           string, name of group script should be stored in
-    platform        string, platform devop or module is written to run on
+    vendor        string, vendor devop or module is written to run on
     func            string, name of function to be ran
     '''
 
     if group not in registered_operations:
         registered_operations[group] = {}
 
-    if not registered_operations[group].get(platform):
-        registered_operations[group][platform] = {}
+    if not registered_operations[group].get(vendor):
+        registered_operations[group][vendor] = {}
     try:
-        registered_operations[group][platform].update({func.__name__: func})
+        registered_operations[group][vendor].update({func.__name__: func})
     except:
         pass
 
 
-def _log_operation_to_file(platform, operation, module_result):
+def _log_operation_to_file(vendor, operation, module_result):
     curframe = inspect.currentframe()
     current_frame = inspect.getouterframes(curframe, 2)[3][3]
 
@@ -74,37 +74,37 @@ def _log_operation_to_file(platform, operation, module_result):
         json.dump(module_data, temp_module_output, indent = 4)
 
 
-def _run_registered_device_operation(platform, operation, connection, **kwargs):
+def _run_registered_device_operation(vendor, operation, connection, **kwargs):
     '''
     Summary:
     Wrapper to be used internally to run device operations through the registry.
 
     Arguments:
-    platform        string, platform the operation is categorised by
+    vendor        string, vendor the operation is categorised by
     operation       string, operation to be run
     connection      netmiko SSH obj, connection to used to run the operaiton
     **kwargs        optional arguments the operation needs to run
     '''
 
     log('Attempting to run device operation {}'.format(operation))
-    device_operation_result = registered_operations['devops'][platform][operation](connection, **kwargs)
+    device_operation_result = registered_operations['devops'][vendor][operation](connection, **kwargs)
     log('Successfully ran device operation {}'.format(operation))
 
     if isinstance(device_operation_result, dict):
         device_operation_result.update({'uuid': str(uuid.uuid4())})
 
-    _log_operation_to_file(platform, operation, device_operation_result)
+    _log_operation_to_file(vendor, operation, device_operation_result)
 
     return device_operation_result
 
 
-def _run_registered_module(platform, operation, connection, store):
+def _run_registered_module(vendor, operation, connection, store):
     '''
     Summary:
     Wrapper to be used internally to run modules through the registry.
 
     Arguments:
-    platform        string, platform the operation is categorised by
+    vendor        string, vendor the operation is categorised by
     operation       string, operation to be run
     connection      netmiko SSH obj, connection to used to run the operation
     store           dict, current store of the task
@@ -113,7 +113,7 @@ def _run_registered_module(platform, operation, connection, store):
     log('Attempting to run module {}'.format(operation))
 
 
-    module_result = registered_operations['modules'][platform][operation](connection, store)
+    module_result = registered_operations['modules'][vendor][operation](connection, store)
 
     frame = inspect.currentframe()
     store = frame.f_locals['store']
@@ -129,6 +129,6 @@ def _run_registered_module(platform, operation, connection, store):
     module_result.update({'uuid': str(uuid.uuid4())})
     module_result.update({'store': store})
 
-    _log_operation_to_file(platform, operation, module_result)
+    _log_operation_to_file(vendor, operation, module_result)
 
     return module_result

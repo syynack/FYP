@@ -1,0 +1,21 @@
+# This file is used to define target information to be used when executing
+# tasks. This information is what shall be used when attempting to connect
+# to the targets.
+
+
+# Authentication
+# Define a global password to be used for all device connections
+global_password: 'framework_test'
+
+# Define a global username to be used for all device connections
+global_username: framework_test
+
+
+# Endpoints
+# Define a global vendor if all the targets run the same operating system
+global_vendor: 'cisco_ios'
+
+# Define target information
+targets:
+- ip: '192.168.253.130'
+- ip: '192.168.253.131'

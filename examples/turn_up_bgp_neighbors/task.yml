@@ -1,0 +1,8 @@
+# This file is used to define task stages to be executed within the task.
+
+# Task
+task:
+- 'precheck_get_facts'
+- 'precheck_store_configuration'
+- 'precheck_current_interface_configuration'
+

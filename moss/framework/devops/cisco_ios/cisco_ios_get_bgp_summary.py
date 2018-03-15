@@ -20,7 +20,7 @@ def cisco_ios_get_bgp_summary(connection):
         'BGP\stable\sversion\sis\s(?P<bgp_table_version>[^,]),\smain\srouting\stable\sversion\s(?P<routing_table_version>[^\n]+)'
     ]
 
-    neighbor_regex = '(?P<neighbor_ip>(?:[0-9]{1,3}\.){3}[0-9]{1,3})\s+(?P<bgp_version>\d)\s+(?P<as_numbner>[0-9]+)\s+(?P<mgg_recv>[0-9]+)\s+(?P<msg_sent>[0-9]+)\s+(?P<table_version>[0-9]+)\s+(?P<in_q>[0-9]+)\s+(?P<out_q>[0-9]+)\s(?P<up_down>[0-9]+:[0-9]+:[0-9]+)\s+(?P<state_prefix_received>[^\n]+)'
+    neighbor_regex = '(?P<neighbor_ip>[^\s]+)\s+(?P<bgp_version>\d)\s+(?P<as_number>[0-9]+)\s+(?P<msg_recv>[0-9]+)\s+(?P<msg_sent>[0-9]+)\s+(?P<table_version>[0-9]+)\s+(?P<in_q>[0-9]+)\s+(?P<out_q>[0-9]+)\s+(?P<up_down>(never|[0-9]+:[0-9]+:[0-9]+))\s+(?P<state_prefix_received>[^\n]+)'
 
     stdout = {"neighbors": []}
 

@@ -135,7 +135,7 @@ class Module():
         result_dict.update(self.module_start_data)
         result_dict.update({'module': self.module})
         result_dict.update({'uuid': str(uuid.uuid4())})
-
+        
         if result == 'success':
             result_dict.update({'next_module': self.next_module})
             module_success(module_result['delay'])

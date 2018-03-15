@@ -79,7 +79,7 @@ def task(edit, output):
     _create_file(output, TASK_BASE_TEXT)
 
 
-@click.group(short_help = 'Create new templates for endpoints, tasks, or custom modules')
+@click.group(short_help = 'Create new templates for targets, tasks, or custom modules')
 def new():
     pass
 
