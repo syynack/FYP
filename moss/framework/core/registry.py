@@ -104,15 +104,13 @@ def _run_registered_module(vendor, operation, connection, store):
     Wrapper to be used internally to run modules through the registry.
 
     Arguments:
-    vendor        string, vendor the operation is categorised by
+    vendor          string, vendor the operation is categorised by
     operation       string, operation to be run
     connection      netmiko SSH obj, connection to used to run the operation
     store           dict, current store of the task
     '''
 
     log('Attempting to run module {}'.format(operation))
-
-
     module_result = registered_operations['modules'][vendor][operation](connection, store)
 
     frame = inspect.currentframe()

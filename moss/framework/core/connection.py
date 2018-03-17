@@ -28,6 +28,7 @@ class Connection():
 
     def __init__(self, vendor='', ip='', username='', password='', port=22, timeout=20, session_timeout=60):
         self.vendor = vendor
+        self.device_type = self.vendor
         self.ip = ip
         self.username = username
         self.password = password
@@ -79,3 +80,20 @@ class Connection():
             connection.disconnect()
         except:
             raise
+
+
+class NoSSHMockObject(object):
+    def __init__(self, vendor='', ip='', username='', password='', port=22, timeout=20, session_timeout=60):
+        self.device_type = vendor
+        self.vendor = vendor
+        self.ip = ip
+        self.username = username
+        self.password = password
+        self.port = port
+        self.timeout = timeout
+        self.session_timeout = session_timeout
+        self.facts = {}
+
+
+    def close(self, target_connection):
+        return

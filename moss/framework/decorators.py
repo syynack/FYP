@@ -7,10 +7,10 @@ def register(vendor, group = 'modules'):
     Summary:
     Takes modules registered with the @register decorator. Aim is to only allow
     registered modules to be executed. The modules are appended to a list
-    which is ordered by platform.
+    which is ordered by vendor.
 
     Arguments:
-    platform        string, platform module is intended to be used for
+    vendor          string, vendor module is intended to be used for
     group           string, group where the module should be stored in the registry
 
     Returns:

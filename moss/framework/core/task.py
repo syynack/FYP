@@ -9,10 +9,10 @@ import getpass
 import uuid
 import json
 
-from moss.framework.core.connection import Connection
+from moss.framework.core.connection import Connection, NoSSHMockObject
 from moss.framework.core.registry import _run_registered_device_operation
 from moss.framework.core.module import Module
-from moss.framework.utils import start_banner, start_header, timer, end_banner, write_json_to_file, create_task_start_temp_file, create_task_links_temp_file, post_device
+from moss.framework.utils import start_banner, start_header, timer, end_banner, write_json_to_file, create_task_start_temp_file, create_task_links_temp_file, post_device, print_data_in_json, put_output_file_location
 from datetime import datetime
 from getpass import getuser
 
@@ -94,11 +94,10 @@ def _construct_task_order(task_data):
         module['next_module'] = module_order[index + 1]['module']
 
     module_order[-1]['next_module'] = ''
-
     return module_order
 
 
-def _construct_target(target, target_data):
+def _construct_target(target, target_data, no_ssh=False):
     '''
     Summary:
     Parses dict from targets file to construct an targets obj with the correct information.
@@ -124,6 +123,13 @@ def _construct_target(target, target_data):
     for element in password_sources:
         if element != '':
             password = element
+
+    if no_ssh:
+        device = NoSSHMockObject(
+            vendor = target.get('vendor') if target.get('vendor') else target_data.get('global_vendor')
+        )
+
+        return device
 
     device = Connection(
         vendor = target.get('vendor') if target.get('vendor') else target_data.get('global_vendor'),
@@ -169,10 +175,11 @@ def _construct_stdout(start_data):
     title = 'output/{}-{}-{}-{}.json'.format(end_data['uuid'], end_data['start_date_time'], end_data['start_user'], end_data['target']).replace(' ', '-')
     write_json_to_file(end_data, title)
 
-    #log_operation_to_redis_database(end_data['uuid'], end_data)
-
     os.remove('output/.stdout.json')
     os.remove('output/.links.json')
+
+    with open(title, 'r') as output_file:
+        return os.path.abspath(output_file.name)
 
 
 def _run_task(connection, module_order):
@@ -188,7 +195,11 @@ def _run_task(connection, module_order):
     next_module = module_order[0]
     start_data = _task_start_signals(module_order)
     store = STORE
-    device_facts = _run_registered_device_operation(connection.device_type, connection.device_type + '_get_facts', connection)
+    if not isinstance(connection, Connection):
+        device_facts = _run_registered_device_operation(connection.device_type, connection.device_type + '_get_facts', connection)
+    else:
+        device_facts = {}
+
     start_data.update({
         "device_facts": device_facts
     })
@@ -215,7 +226,10 @@ def _run_task(connection, module_order):
                 next_module = module_order[module_index[0]]
 
     start_data["result"] = start_data["results"]["modules"][-1]["result"]
-    _construct_stdout(start_data)
+    output_file = _construct_stdout(start_data)
+    start_data.update({"output_file": output_file})
+    put_output_file_location(output_file)
+    return start_data
 
 
 def task_control(targets, output_file, print_output, task):
@@ -241,12 +255,17 @@ def task_control(targets, output_file, print_output, task):
     start_header(module_order)
 
     for target in target_data['targets']:
-        post_device(target['ip'])
-        target_obj = _construct_target(target, target_data)
-        target_connection = target_obj.get_connection()
+        if task_data.get('no_ssh') == True:
+            post_device(target['ip'], no_ssh=True)
+            target_connection = _construct_target(target, target_data)
+        else:
+            target_obj = _construct_target(target, target_data)
+            target_connection = target_obj.get_connection()
+
         result = _run_task(target_connection, module_order)
 
-        target_obj.close(target_connection)
+        if not task_data.get('no_ssh'):
+            target_obj.close(target_connection)
 
         if print_output:
             print_data_in_json(result)

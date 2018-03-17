@@ -50,8 +50,15 @@ def start_header(module_order):
     print colour('\n :: First module: {}'.format(first_module), 'white', bold=True)
 
 
-def post_device(name):
-    print colour('\n :: Target: {}'.format(name), 'white', bold=True)
+def put_output_file_location(output_file):
+    print colour(' :: Output file location: {}'.format(output_file), 'white', bold=True)
+
+
+def post_device(name, no_ssh=False):
+    if no_ssh:
+        print colour('\n :: Target: {}'.format(name), 'white', bold=True) + colour(' (No SSH)', 'blue', bold=True)
+    else:
+        print colour('\n :: Target: {}'.format(name), 'white', bold=True)
 
 
 def module_start_header(task):

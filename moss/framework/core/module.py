@@ -102,12 +102,7 @@ class Module():
         '''
 
         self.module_start_data = self._module_start_signals(self.module)
-
-        try:
-            module_result = _run_registered_module(self.connection.device_type, self.module, self.connection, self.store)
-        except AttributeError as e:
-            raise ModuleResultError, e
-
+        module_result = _run_registered_module(self.connection.device_type, self.module, self.connection, self.store)
         return self._module_result(module_result)
 
 
