@@ -9,6 +9,8 @@ import sys
 import os
 import subprocess
 
+from netmiko.ssh_dispatcher import platforms
+
 
 def colour(text, colour, bold=False):
     colours = {
@@ -40,6 +42,38 @@ def start_banner():
     print colour(banner, 'white', bold=True)
 
 
+def module_not_found_error(module, vendor):
+    print colour(' Module {} not found for vendor {}. Exiting.'.format(module, vendor), 'red', bold=True)
+
+
+def device_operation_not_found_error(operation, vendor):
+    print colour(' Device operation {} not found for vendor {}. Exiting.'.format(operation, vendor), 'red', bold=True)
+
+
+def module_doesnt_have_correct_parameters(module):
+    print colour(' {} takes connection and store as parameters. Exiting.'.format(module), 'red', bold=True)
+
+
+def username_or_password_not_found_error():
+    print colour(' Username or password for device not found. Exiting.', 'red', bold=True)
+
+
+def vendor_not_found_error():
+    print colour(' Vendor for device not found. Exiting. Supported vendors are: {}'.format(', '.join(platforms)), 'red', bold=True)
+
+
+def ip_not_found_error():
+    print colour(' IP for device not found. Exiting.', 'red', bold=True)
+
+
+def targets_list_not_found_error():
+    print colour(' Targets list not found. Exiting.', 'red', bold=True)
+
+
+def task_list_not_found_error():
+    print colour(' Task list not found. Exiting.', 'red', bold=True)
+
+
 def start_header(module_order):
     first_module = module_order[0]['module']
     print colour(' :: Modules to be executed: ', 'white', bold=True)
@@ -55,7 +89,7 @@ def put_output_file_location(output_file):
 
 
 def post_device(name, no_ssh=False):
-    if no_ssh:
+    if no_ssh == True:
         print colour('\n :: Target: {}'.format(name), 'white', bold=True) + colour(' (No SSH)', 'blue', bold=True)
     else:
         print colour('\n :: Target: {}'.format(name), 'white', bold=True)
@@ -66,14 +100,19 @@ def module_start_header(task):
 
 
 def module_success(delay):
-    print colour('success', 'green')
-    time.sleep(delay)
+    if delay > 0:
+        print colour('success', 'green') + colour(' (delay = {})'.format(delay), 'white', bold=True)
+        time.sleep(delay)
+    else:
+        print colour('success', 'green')
 
 
 def module_branch(next_module, delay):
-    print colour('branching to {}'.format(next_module), 'blue')
+    if delay > 0:
+        print colour('branching to {}'.format(next_module), 'blue') + colour(' (delay = {})'.format(delay), 'white', bold=True)
+    else:
+        print colour('branching to {}'.format(next_module), 'blue')
     time.sleep(delay)
-
 
 def module_end():
     print colour('end', 'green')
@@ -84,7 +123,10 @@ def module_fail():
 
 
 def module_retry(delay):
-    print colour('retry', 'magenta')
+    if delay > 0:
+        print colour('retry', 'magenta') + colour(' (delay = {})'.format(delay), 'white', bold=True)
+    else:
+        print colour('retry', 'magenta')
     time.sleep(delay)
 
 

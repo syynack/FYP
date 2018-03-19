@@ -36,7 +36,7 @@ def _edit_file(name, contents):
 
 @click.command(short_help = 'Create new targets template')
 @click.option('-e', '--edit', is_flag=True, help = 'Edit the template now')
-@click.option('-o', '--output', default='targets', help = 'Filename for output file')
+@click.option('-o', '--output', default='targets.yml', help = 'Filename for output file')
 def targets(edit, output):
     '''
     Summary:
@@ -58,6 +58,9 @@ def module(edit, output):
     Creates a new module file and populates it.
     '''
 
+    if output[-2:] != 'py':
+        output = output + '.py'
+
     if edit:
         _edit_file(output, MODULE_BASE_TEXT)
 
@@ -66,7 +69,7 @@ def module(edit, output):
 
 @click.command(short_help = 'Create new task template')
 @click.option('-e', '--edit', is_flag=True, help = 'Edit the template now')
-@click.option('-o', '--output', default='task', help = 'Filename for output file')
+@click.option('-o', '--output', default='task.yml', help = 'Filename for output file')
 def task(edit, output):
     '''
     Summary:

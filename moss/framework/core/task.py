@@ -12,7 +12,11 @@ import json
 from moss.framework.core.connection import Connection, NoSSHMockObject
 from moss.framework.core.registry import _run_registered_device_operation
 from moss.framework.core.module import Module
-from moss.framework.utils import start_banner, start_header, timer, end_banner, write_json_to_file, create_task_start_temp_file, create_task_links_temp_file, post_device, print_data_in_json, put_output_file_location
+from moss.framework.utils import start_banner, start_header, timer, end_banner, write_json_to_file, \
+                                 create_task_start_temp_file, create_task_links_temp_file, post_device, \
+                                 print_data_in_json, put_output_file_location, username_or_password_not_found_error, \
+                                 vendor_not_found_error, ip_not_found_error, targets_list_not_found_error, \
+                                 task_list_not_found_error
 from datetime import datetime
 from getpass import getuser
 
@@ -123,6 +127,21 @@ def _construct_target(target, target_data, no_ssh=False):
     for element in password_sources:
         if element != '':
             password = element
+
+    if username is None or password is None:
+        username_or_password_not_found_error()
+        end_banner()
+        sys.exit(1)
+
+    if target.get('vendor') == '' and target.get('global_vendor') is None:
+        vendor_not_found_error()
+        end_banner()
+        sys.exit(1)
+
+    if target.get('ip') == '':
+        ip_not_found_error()
+        end_banner()
+        sys.exit(1)
 
     if no_ssh:
         device = NoSSHMockObject(
@@ -249,28 +268,43 @@ def task_control(targets, output_file, print_output, task):
     '''
 
     target_data, task_data = _parse_yaml_data(targets, task)
+
+    if task_data.get('task') is None:
+        task_list_not_found_error()
+        sys.exit(1)
+
     module_order = _construct_task_order(task_data['task'])
 
     start_banner()
     start_header(module_order)
 
-    for target in target_data['targets']:
-        if task_data.get('no_ssh') == True:
-            post_device(target['ip'], no_ssh=True)
-            target_connection = _construct_target(target, target_data)
-        else:
-            target_obj = _construct_target(target, target_data)
-            target_connection = target_obj.get_connection()
+    if target_data.get('targets') is None:
+        targets_list_not_found_error()
+        end_banner()
+        sys.exit(1)
 
-        result = _run_task(target_connection, module_order)
+    try:
+        for target in target_data['targets']:
+            if task_data.get('no_ssh') == True:
+                post_device(target['ip'], no_ssh=True)
+                target_connection = _construct_target(target, target_data)
+            else:
+                post_device(target['ip'])
+                target_obj = _construct_target(target, target_data)
+                target_connection = target_obj.get_connection()
 
-        if not task_data.get('no_ssh'):
-            target_obj.close(target_connection)
+            result = _run_task(target_connection, module_order)
 
-        if print_output:
-            print_data_in_json(result)
+            if not task_data.get('no_ssh'):
+                target_obj.close(target_connection)
 
-        if output_file:
-            write_json_to_file(result, output_file)
+            if print_output:
+                print_data_in_json(result)
+
+            if output_file:
+                write_json_to_file(result, output_file)
+    except KeyboardInterrupt:
+        end_banner()
+        sys.exit(1)
 
     end_banner()

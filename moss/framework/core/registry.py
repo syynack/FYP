@@ -4,9 +4,11 @@ import os
 import json
 import uuid
 import inspect
+import sys
 
 from moss.framework.core.log import log
 from moss.framework.core.exceptions import RegisteredModuleError
+from moss.framework.utils import module_not_found_error, module_doesnt_have_correct_parameters, device_operation_not_found_error, end_banner
 
 registered_operations = {}
 
@@ -87,7 +89,12 @@ def _run_registered_device_operation(vendor, operation, connection, **kwargs):
     '''
 
     log('Attempting to run device operation {}'.format(operation))
-    device_operation_result = registered_operations['devops'][vendor][operation](connection, **kwargs)
+    try:
+        device_operation_result = registered_operations['devops'][vendor][operation](connection, **kwargs)
+    except KeyError:
+        device_operation_not_found_error(operation, vendor)
+        end_banner()
+        sys.exit(1)
     log('Successfully ran device operation {}'.format(operation))
 
     if isinstance(device_operation_result, dict):
@@ -111,8 +118,17 @@ def _run_registered_module(vendor, operation, connection, store):
     '''
 
     log('Attempting to run module {}'.format(operation))
-    module_result = registered_operations['modules'][vendor][operation](connection, store)
-
+    try:
+        module_result = registered_operations['modules'][vendor][operation](connection, store)
+    except KeyError:
+        module_not_found_error(operation, vendor)
+        end_banner()
+        sys.exit(1)
+    except TypeError:
+        module_doesnt_have_correct_parameters(operation)
+        end_banner()
+        sys.exit(1)
+        
     frame = inspect.currentframe()
     store = frame.f_locals['store']
 
