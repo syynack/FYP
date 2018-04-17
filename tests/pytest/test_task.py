@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import pytest
-from moss.framework.core.task import _construct_task_order, _construct_endpoint
+from moss.framework.core.task import _construct_task_order, _construct_target
 from moss.framework.core.connection import Connection
 
 
@@ -22,14 +22,14 @@ def test_construct_task_order(test_task_order, expected_result):
 
 @pytest.mark.parametrize('test_target,test_target_data', [(
     {
-        "global_username": "username", 
-        "global_password": "password"
-    },
-    {
         "vendor": "juniper",
         "ip": '8.8.8.8'
+    },
+    {
+        "global_username": "username", 
+        "global_password": "password"
     }
 )])
 def test_construct_target(test_target, test_target_data):
-    result = _construct_endpoint(test_target, test_target_data)
+    result = _construct_target(test_target, test_target_data)
     assert isinstance(result, Connection)

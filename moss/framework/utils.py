@@ -174,3 +174,7 @@ def create_task_links_temp_file():
     with open('output/.links.json', 'w') as temp_output_file:
         start_skeleton = {"links": {}}
         temp_output_file.write(json.dumps(start_skeleton, indent = 4))
+
+
+def make_it_look_important():
+    print('.'),

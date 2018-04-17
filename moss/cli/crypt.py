@@ -78,7 +78,8 @@ def lock(json, key, plaintext_file):
 @click.option('-j', '--json', is_flag=True, help = 'Output in JSON format')
 @click.option('-k', '--key', default=None, help = 'Key to be used for encryption')
 @click.option('-c', '--crypt-file', default=None, help = 'Target file to be decrypted')
-def unlock(json, key, crypt_file):
+@click.option('-o', '--output', default='unencrypted', help = 'Filename for output file')
+def unlock(json, key, crypt_file, output):
     '''
     Summary:
     Controls encryption of a plaintext file between the cli interface
@@ -93,7 +94,7 @@ def unlock(json, key, crypt_file):
         print '-c/--crypt-file is a required argument.'
         sys.exit(1)
 
-    result = MossCrypt().decrypt_file(key, crypt_file)
+    result = MossCrypt().decrypt_file(key, crypt_file, output)
 
     if result['result'] == 'fail' and not json:
         print 'Decryption failed: {}'.format(result['reason'])

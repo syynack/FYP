@@ -12,7 +12,7 @@ import moss.framework.devops
 from datetime import datetime
 from moss.framework.core.registry import registered_operations, _run_registered_module, _run_registered_device_operation
 from moss.framework.core.exceptions import ModuleResultError
-from moss.framework.utils import timer, module_start_header, module_success, module_branch, module_end, module_fail, module_retry
+from moss.framework.utils import timer, module_start_header, module_success, module_branch, module_end, module_fail, module_retry, make_it_look_important
 
 
 def execute_device_operation(operation, connection, **kwargs):
@@ -102,7 +102,9 @@ class Module():
         '''
 
         self.module_start_data = self._module_start_signals(self.module)
+        make_it_look_important()
         module_result = _run_registered_module(self.connection.device_type, self.module, self.connection, self.store)
+        make_it_look_important()
         return self._module_result(module_result)
 
 
@@ -118,6 +120,7 @@ class Module():
     def _module_result(self, module_result):
         result = module_result['result']
         store = module_result['store']
+        make_it_look_important()
 
         result_dict = {
             'result': result,
@@ -127,10 +130,12 @@ class Module():
             'end_date_time': str(datetime.now())
         }
 
+        make_it_look_important()
         result_dict.update(self.module_start_data)
         result_dict.update({'module': self.module})
         result_dict.update({'uuid': str(uuid.uuid4())})
-        
+        make_it_look_important()
+
         if result == 'success':
             result_dict.update({'next_module': self.next_module})
             module_success(module_result['delay'])

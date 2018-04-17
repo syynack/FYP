@@ -148,4 +148,3 @@ def test_cisco_ios_get_facts(expected_result):
     connection = Connection()
     result = cisco_ios_get_facts_success(connection)
     assert result == expected_result
-

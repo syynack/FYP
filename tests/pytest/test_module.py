@@ -54,5 +54,3 @@ def test_module_retry_with_delay(expected_result):
 def test_module_end(expected_result):
     result = module.ModuleResult.end()
     assert result == expected_result
-
-

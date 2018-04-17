@@ -16,7 +16,7 @@ from moss.framework.utils import start_banner, start_header, timer, end_banner, 
                                  create_task_start_temp_file, create_task_links_temp_file, post_device, \
                                  print_data_in_json, put_output_file_location, username_or_password_not_found_error, \
                                  vendor_not_found_error, ip_not_found_error, targets_list_not_found_error, \
-                                 task_list_not_found_error
+                                 task_list_not_found_error, make_it_look_important
 from datetime import datetime
 from getpass import getuser
 

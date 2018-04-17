@@ -90,7 +90,7 @@ class MossCrypt():
         }
 
 
-    def decrypt_file(self, key, in_file, chunksize = 64*8192):
+    def decrypt_file(self, key, in_file, output, chunksize = 64*8192):
         '''
         Summary:
         Handles file decryption with AES 256 and returns related information
@@ -113,8 +113,6 @@ class MossCrypt():
                 'reason': 'File is not a .crypt file'
             }
 
-        out_file = '.'.join(in_file.split('.')[:-1])
-
         with open(in_file, 'rb') as encrypted_file:
             original_size = struct.unpack('<Q', encrypted_file.read(struct.calcsize('Q')))[0]
             initialisation_vector = encrypted_file.read(16)
@@ -122,10 +120,7 @@ class MossCrypt():
 
             chunks_decrypted = 0
 
-            if not out_file:
-                out_file = in_file.split('.')[0]
-
-            with open(out_file, 'wb') as plaintext:
+            with open(output, 'wb') as plaintext:
                 try:
                     while True:
                         encrypted_chunk = encrypted_file.read(chunksize)
@@ -150,9 +145,9 @@ class MossCrypt():
                 'key': key,
                 'iv': initialisation_vector.encode('hex'),
                 'encrypted_file_size': os.path.getsize(in_file),
-                'plaintext_file_size': os.path.getsize(out_file),
+                'plaintext_file_size': os.path.getsize(output),
                 'chunks_decrypted': chunks_decrypted,
-                'output_file': out_file
+                'output_file': output
             },
             'start_time': start_date_time,
             'end_time': str(datetime.now()),
