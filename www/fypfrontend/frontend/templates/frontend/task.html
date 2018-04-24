@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <title>Frontend</title>
+    {% load staticfiles %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/click.js' %}"></script>
+    <script>
+      var task_directory_path = "{{ task_directory_path }}";
+    </script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Frontend</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/run">Run Task</a></li>
+          </ul>
+        </div>
+      </nav>
+    </nav>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <h3>Task {{ task_directory_path }}</h3>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>task.yml</h4>
+            {{ task_file_data }}
+          </div>
+          <div class="col-lg-6">
+              <h4>targets.yml</h4>
+            {{ targets_file_data }}
+          </div>
+        </div>
+        <hr>
+        <h4>Task Output</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-primary btn-block" onclick="execute_task(task_directory_path);">Run Task</button>
+          </div>
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-primary btn-block">View Output</button>
+          </div>
+        </div>
+        <br>
+        <div id="output_box" class="well">{{ cli_output }}</div>
+      </div> 
+    </div>
+  </body>
+</html>
