@@ -94,5 +94,9 @@ def _read_file(path, file_name):
 def execute_task(request):
     if request.is_ajax():
         path = request.GET.get('path', '')
-        task = subprocess.Popen('cd {}; mcli run'.format(path), stdout=subprocess.PIPE, shell=True)
-        return HttpResponse
+        current_path = os.path.dirname(os.path.abspath(__file__))
+
+        open("{}/static/task_output.txt".format(current_path), 'w').close()
+        task = subprocess.Popen('cd {}; unbuffer mcli run --web > {}/static/task_output.txt'.format(path, current_path), shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+        return HttpResponse()

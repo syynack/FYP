@@ -42,16 +42,25 @@
         </div>
         <hr>
         <h4>Task Output</h4>
-        <div class="row">
-          <div class="col-lg-6">
-            <button type="button" class="btn btn-primary btn-block" onclick="execute_task(task_directory_path);">Run Task</button>
-          </div>
-          <div class="col-lg-6">
-            <button type="button" class="btn btn-primary btn-block">View Output</button>
-          </div>
+        <button id="runtaskbutton" type="button" class="btn btn-primary btn-block" onclick="execute_task(task_directory_path);">Run Task</button>
         </div>
         <br>
-        <div id="output_box" class="well">{{ cli_output }}</div>
+        <script>
+        $(document).ready(function() {
+          $('#runtaskbutton').click(function() {
+            var task_output_file = '/static/task_output.txt';
+            var interval = setInterval(function() {
+              $.get(task_output_file, {}, function(content) {
+                var untreated_content = content.toString()
+                $('#output_box').html(content);
+              });
+            }, 500);
+          });
+        });
+        </script>
+        <div class="container">
+          <div class="well"><p id="output_box"></p></div>
+        </div>
       </div> 
     </div>
   </body>

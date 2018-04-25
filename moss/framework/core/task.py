@@ -8,6 +8,7 @@ import yaml
 import getpass
 import uuid
 import json
+import moss
 
 from moss.framework.core.connection import Connection, NoSSHMockObject
 from moss.framework.core.registry import _run_registered_device_operation
@@ -17,6 +18,7 @@ from moss.framework.utils import start_banner, start_header, timer, end_banner, 
                                  print_data_in_json, put_output_file_location, username_or_password_not_found_error, \
                                  vendor_not_found_error, ip_not_found_error, targets_list_not_found_error, \
                                  task_list_not_found_error, make_it_look_important
+from moss.framework._global import WEB
 from datetime import datetime
 from getpass import getuser
 
@@ -251,7 +253,7 @@ def _run_task(connection, module_order):
     return start_data
 
 
-def task_control(targets, output_file, print_output, task):
+def task_control(targets, output_file, print_output, task, web):
     '''
     Summary:
     Controlling for the overall execution of the task, controls running each
@@ -266,6 +268,9 @@ def task_control(targets, output_file, print_output, task):
     Returns:
     file or JSON output
     '''
+
+    if web:
+        moss.framework._global.WEB = True
 
     target_data, task_data = _parse_yaml_data(targets, task)
 
