@@ -41,7 +41,7 @@ def start_banner():
     banner = '=' * ((terminal_width - len(header)) / 2) + header + '=' * ((terminal_width - len(header)) / 2)
 
     if moss.framework._global.WEB == True:
-        print "<br/>" + banner
+        print "<br/><p class='start-banner'>" + banner + "</p>"
     else:
         print colour(banner, 'white', bold=True)
 
@@ -70,7 +70,8 @@ def module_doesnt_have_correct_parameters(module):
 def username_or_password_not_found_error():
     if moss.framework._global.WEB == True:
         print "<br/>" + ' Username or password for device not found. Exiting.'
-    print colour(' Username or password for device not found. Exiting.', 'red', bold=True)
+    else:
+        print colour(' Username or password for device not found. Exiting.', 'red', bold=True)
 
 
 def vendor_not_found_error():
@@ -104,25 +105,25 @@ def task_list_not_found_error():
 def start_header(module_order):
     first_module = module_order[0]['module']
     if moss.framework._global.WEB == True:
-        print "<br/>" + ' :: Modules to be executed: '
+        print "<br/><h6 class='start-header'>" + ' : : Modules to be executed:  </h6>'
     else:
         print colour(' :: Modules to be executed: ', 'white', bold=True)
 
     for module in module_order:
         if moss.framework._global.WEB == True:
-            print "<br/>" + '\t{}'.format(module['module'])
+            print "<br/><h6 class='start-header-names'>" + '\t{}</h6>'.format(module['module'])
         else:
             print colour('\t{}'.format(module['module']), 'white')
 
     if moss.framework._global.WEB == True:
-        print "<br/>" + '\n :: First module: {}'.format(first_module)
+        print "<br/><br/><h6 class='start-header'>" + '\n : : First module: {}</h6></br>'.format(first_module)
     else:
         print colour('\n :: First module: {}'.format(first_module), 'white', bold=True)
 
 
 def put_output_file_location(output_file):
     if moss.framework._global.WEB == True:
-        print "<br/>" + ' :: Output file location: {}'.format(output_file)
+        print "<br/><br/><h6 class='start-header'> : : Output file location: {}</h6><br/><br/>".format(output_file)
     else:
         print colour(' :: Output file location: {}'.format(output_file), 'white', bold=True)
 
@@ -130,19 +131,19 @@ def put_output_file_location(output_file):
 def post_device(name, no_ssh=False):
     if no_ssh == True:
         if moss.framework._global.WEB == True:
-            print "<br/>" + '\n :: Target: {} (No SSH)'.format(name) 
+            print "<br/><h6 class='start-header'>" + "\n : : Target: {} <h6 class='post-device'>(No SSH)</h6></h6>".format(name) 
         else:
             print colour('\n :: Target: {}'.format(name), 'white', bold=True) + colour(' (No SSH)', 'blue', bold=True)
     else:
         if moss.framework._global.WEB == True:
-            print "<br/>" + '\n :: Target: {}'.format(name)
+            print "<br/><h6 class='start-header'>" + '\n : : Target: {}</h6>'.format(name)
         else:
             print colour('\n :: Target: {}'.format(name), 'white', bold=True)
 
 
 def module_start_header(task):
     if moss.framework._global.WEB == True:
-        print "<br/>" + '\t :: {}'.format(task)
+        print "<br/><h6 class='module-start-header'>" + '\t : : {}</h6><b>'.format(task)
     else:
         print colour('\t :: {}'.format(task), 'white'),
 
@@ -150,13 +151,13 @@ def module_start_header(task):
 def module_success(delay):
     if delay > 0:
         if moss.framework._global.WEB == True:
-            print "success" + ' (delay = {})'.format(delay)
+            print "</b><h6 class='success'>success</h6>" + " <h6 class='delay'>(delay = {})</h6>".format(delay)
         else:
             print colour('success', 'green') + colour(' (delay = {})'.format(delay), 'white', bold=True)
         time.sleep(delay)
     else:
         if moss.framework._global.WEB == True:
-            print 'success'
+            print "</b><h6 class='success'>success</h6>"
         else:
             print colour('success', 'green')
 
@@ -164,26 +165,27 @@ def module_success(delay):
 def module_branch(next_module, delay):
     if delay > 0:
         if moss.framework._global.WEB == True:
-            print 'branching to {}'.format(next_module) + ' (delay = {})'.format(delay)
+            print "</b><h6 class='branch'>branching to {}</h6>".format(next_module) + " <h6 class='delay'>(delay = {})</h6>".format(delay)
         else:
             print colour('branching to {}'.format(next_module), 'blue') + colour(' (delay = {})'.format(delay), 'white', bold=True)
     else:
         if moss.framework._global.WEB == True:
-            print 'branching to {}'.format(next_module)
+            print "</b><h6 class='branch'>branching to {}</h6>".format(next_module)
         else:
             print colour('branching to {}'.format(next_module), 'blue')
     time.sleep(delay)
 
+
 def module_end():
     if moss.framework._global.WEB == True:
-        print 'end'
+        print "</b><h6 class='success'>end</h6>"
     else:
         print colour('end', 'green')
 
 
 def module_fail():
     if moss.framework._global.WEB == True:
-        print 'fail'
+        print "</b><h6 class='fail'>fail</h6>"
     else:
         print colour('fail', 'red')
 
@@ -191,12 +193,12 @@ def module_fail():
 def module_retry(delay):
     if delay > 0:
         if moss.framework._global.WEB == True:
-            print 'retry (delay = {})'.format(delay)
+            print "</b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = {})</h6>".format(delay)
         else:
             print colour('retry', 'magenta') + colour(' (delay = {})'.format(delay), 'white', bold=True)
     else:
         if moss.framework._global.WEB == True:
-            print 'retry'
+            print "</b><h6 class='retry'>retry</h6>"
         else:
             print colour('retry', 'magenta')
     time.sleep(delay)
@@ -208,7 +210,7 @@ def end_banner():
     banner = '=' * ((terminal_width - len(header)) / 2) + header + '=' * ((terminal_width - len(header)) / 2)
 
     if moss.framework._global.WEB == True:
-        print "<br/>" + banner
+        print "<p class='start-banner'>" + banner + "</p>"
     else:
         print colour(banner, 'white')
 

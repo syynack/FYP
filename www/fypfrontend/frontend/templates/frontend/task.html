@@ -9,17 +9,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{% static 'js/click.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/frontend.css' %}">
     <script>
       var task_directory_path = "{{ task_directory_path }}";
     </script>
-    <nav class="navbar navbar-default">
+    <!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">Frontend</a>
         </div>
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/run">Run Task</a></li>
           </ul>
         </div>
       </nav>
@@ -28,6 +29,9 @@
   <body>
     <div class="container-fluid">
       <div class="container">
+        <br/>
+        <br/>
+        <br/>
         <h3>Task {{ task_directory_path }}</h3>
         <hr>
         <div class="row">
@@ -42,12 +46,19 @@
         </div>
         <hr>
         <h4>Task Output</h4>
-        <button id="runtaskbutton" type="button" class="btn btn-primary btn-block" onclick="execute_task(task_directory_path);">Run Task</button>
+        <div class="row">
+          <div class="col-lg-6">
+            <button id="executeaskbutton" type="button" class="btn btn-primary btn-block" onclick="execute_task(task_directory_path);">Run Task</button>
+          </div>
+          <div class="col-lg-6">
+            <button id="killtaskbutton" type="button" class="btn btn-danger btn-block" onclick="kill_task();">Kill Task</button>
+          </div>
         </div>
-        <br>
+        <br/>
+        <div class="well"><p id="output_box"></p></div>
         <script>
         $(document).ready(function() {
-          $('#runtaskbutton').click(function() {
+          $('#executeaskbutton').click(function() {
             var task_output_file = '/static/task_output.txt';
             var interval = setInterval(function() {
               $.get(task_output_file, {}, function(content) {
@@ -58,9 +69,23 @@
           });
         });
         </script>
-        <div class="container">
-          <div class="well"><p id="output_box"></p></div>
+        <hr>
+        <h4>Modules</h4>
+        <div class="panel-group">
+        {% for module in module_data %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5 class="panel-title">
+              <a data-toggle="collapse" href="#{{ module.module }}">{{ module.module}}</a>
+            </h5>
+          </div>
+          <div id="{{ module.module }}" class="panel-collapse collapse">
+            <div class="panel-body">
+              {{ module.data }}
+            </div>
+          </div>
         </div>
+        {% endfor %}
       </div> 
     </div>
   </body>

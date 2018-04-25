@@ -1,0 +1,56 @@
+.start-banner {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.start-header {
+    font-size: 14px;
+    padding-left: 60px;
+}
+
+.start-header-names {
+    font-size: 14px;
+    padding-left: 100px;
+}
+
+.post-device {
+    font-size: 14px;
+    color: #6699ff;
+}
+
+.module-start-header {
+    font-size: 14px;
+    padding-left: 100px;
+}
+
+.success {
+    font-size: 14px;
+    color: #00cc66;
+}
+
+.branch {
+    font-size: 14px;
+    color: #1aa3ff;
+}
+
+.fail {
+    font-size: 14px;
+    color: #e62e00;
+}
+
+.retry {
+    font-size: 14px;
+    color: #cc00cc;
+}
+
+.delay {
+    font-size: 14px;
+}
+
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
