@@ -1,50 +1,11 @@
-<br/><p class='start-banner'>=============================================[ Task Start ]=============================================</p>
+<br/><p class='start-banner'>========================================[ Task Start ]========================================</p><br/>
 <br/><h6 class='start-header'> : : Modules to be executed:  </h6>
-<br/><h6 class='start-header-names'>	check_running_routing_protocols</h6>
-<br/><h6 class='start-header-names'>	get_active_interfaces</h6>
-<br/><h6 class='start-header-names'>	increase_ospf_cost_on_active_interfaces</h6>
-<br/><h6 class='start-header-names'>	activate_ospf_lsa_overload</h6>
-<br/><h6 class='start-header-names'>	decrease_bgp_local_preference</h6>
-<br/><h6 class='start-header-names'>	increase_bgp_med</h6>
-<br/><h6 class='start-header-names'>	precheck_interface_traffic_levels</h6>
-<br/><h6 class='start-header-names'>	reboot_device</h6>
-<br/><h6 class='start-header-names'>	check_device_uptime</h6>
-<br/><h6 class='start-header-names'>	decrease_bgp_med</h6>
-<br/><h6 class='start-header-names'>	increase_bgp_local_preference</h6>
-<br/><h6 class='start-header-names'>	deactivate_ospf_lsa_overload</h6>
-<br/><h6 class='start-header-names'>	decrease_ospf_cost_on_active_interfaces</h6>
-<br/><h6 class='start-header-names'>	check_traffic_levels</h6>
+<br/><h6 class='start-header-names'>	get_bgp_peers</h6>
 <br/><br/><h6 class='start-header'>
- : : First module: check_running_routing_protocols</h6></br>
+ : : First module: get_bgp_peers</h6></br>
 <br/><h6 class='start-header'>
- : : Target: 192.168.253.130 <h6 class='post-device'>(No SSH)</h6></h6>
-<br/><h6 class='module-start-header'>	 : : check_running_routing_protocols</h6><b>
+ : : Target: 192.168.253.130</h6>
+<br/><h6 class='module-start-header'>	 : : get_bgp_peers</h6><b>
 . . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : get_active_interfaces</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : increase_ospf_cost_on_active_interfaces</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : activate_ospf_lsa_overload</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : decrease_bgp_local_preference</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : increase_bgp_med</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : precheck_interface_traffic_levels</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : reboot_device</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : check_device_uptime</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : decrease_bgp_med</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : increase_bgp_local_preference</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : deactivate_ospf_lsa_overload</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : decrease_ospf_cost_on_active_interfaces</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><h6 class='module-start-header'>	 : : check_traffic_levels</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><br/><h6 class='start-header'> : : Output file location: /Users/matt/_test_dir/output/42c1bc3d-3f09-4283-8f7b-73187e969102-2018-04-25-19:07:16.592364-matt-192.168.253.130.json</h6><br/><br/>
-<p class='start-banner'>==============================================[ Task End ]==============================================</p>
+<br/><br/><h6 class='start-header'> : : Output file location: /Users/matt/git/fyp/examples/monitor_bgp_peers/output/40cc70de-1f59-487f-b04a-4ee379ec4737-2018-04-27-15:22:14.693812-matt-192.168.253.130.json</h6><br/><br/><br/>
+<p class='start-banner'>=========================================[ Task End ]=========================================</p>

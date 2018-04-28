@@ -172,6 +172,38 @@ def _construct_stdout(start_data):
     with open('output/.links.json', 'r') as links:
         links_data = json.load(links)
 
+    for index, module in enumerate(links_data["links"]["_run_task"]):
+        module_data = {}
+        module_data[module] = stdout_data["module_results"][module]
+        module_data[module]["device_operations"] = {}
+        for device_operation in links_data["links"][module]:
+            module_data[module]["device_operations"][device_operation] = {}
+            module_data[module]["device_operations"][device_operation].update(stdout_data["module_results"][device_operation])
+
+        try:
+            start_data["results"]["modules"][index].update(module_data[module])
+        except IndexError:
+            pass
+
+    end_data = _task_end_signals(start_data)
+    end_data.update({'uuid': str(uuid.uuid4())})
+    title = 'output/{}-{}-{}-{}.json'.format(end_data['uuid'], end_data['start_date_time'], end_data['start_user'], end_data['target']).replace(' ', '-')
+    write_json_to_file(end_data, title)
+
+    os.remove('output/.stdout.json')
+    os.remove('output/.links.json')
+
+    with open(title, 'r') as output_file:
+        return os.path.abspath(output_file.name)
+
+    '''
+    for module in links_data["links"]:
+        module_data = {}
+        module_data.update(stdout_data["module_results"][module])
+        module_data['device_operations'] = {}
+        for operation in module:
+            module_data['device_operations'].update(stdout["module_results"][operation])
+
     links_keys = []
 
     for item in links_data['links']:
@@ -196,11 +228,12 @@ def _construct_stdout(start_data):
     title = 'output/{}-{}-{}-{}.json'.format(end_data['uuid'], end_data['start_date_time'], end_data['start_user'], end_data['target']).replace(' ', '-')
     write_json_to_file(end_data, title)
 
-    os.remove('output/.stdout.json')
-    os.remove('output/.links.json')
+    #os.remove('output/.stdout.json')
+    #os.remove('output/.links.json')
 
     with open(title, 'r') as output_file:
         return os.path.abspath(output_file.name)
+    '''
 
 
 def _run_task(connection, module_order):
@@ -225,26 +258,32 @@ def _run_task(connection, module_order):
         "device_facts": device_facts
     })
 
-    while next_module != '':
-        module = Module(
-            connection = connection,
-            module = next_module['module'],
-            next_module = next_module['next_module'],
-            store = store
-        )
+    try:
+        while next_module != '':
+            module = Module(
+                connection = connection,
+                module = next_module['module'],
+                next_module = next_module['next_module'],
+                store = store
+            )
 
-        result = module.run()
-        next_module = result['next_module']
-        store = result['store']
-        start_data['results']['modules'].append(result)
-        start_data['target'] = connection.ip
+            result = module.run()
+            next_module = result['next_module']
+            store = result['store']
+            start_data['results']['modules'].append(result)
+            start_data['target'] = connection.ip
 
-        if next_module != '':
-            module_index = [index for index, module in enumerate(module_order) if next_module == module['module']]
-            if not module_index:
-                next_module = ''
-            else:
-                next_module = module_order[module_index[0]]
+            if next_module != '':
+                module_index = [index for index, module in enumerate(module_order) if next_module == module['module']]
+                if not module_index:
+                    next_module = ''
+                else:
+                    next_module = module_order[module_index[0]]
+    except KeyboardInterrupt:
+        output_file = _construct_stdout(start_data)
+        put_output_file_location(output_file)
+        end_banner()
+        sys.exit(1)
 
     start_data["result"] = start_data["results"]["modules"][-1]["result"]
     output_file = _construct_stdout(start_data)

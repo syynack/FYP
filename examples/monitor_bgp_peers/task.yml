@@ -1,0 +1,8 @@
+# This file is used to define task stages to be executed within the task.
+
+# Task
+task:
+- 'get_bgp_peer_states'
+- 'compare_bgp_peer_states'
+- 'monitor_bgp_peer_state'
+

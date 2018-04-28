@@ -41,7 +41,7 @@ def start_banner():
     banner = '=' * ((terminal_width - len(header)) / 2) + header + '=' * ((terminal_width - len(header)) / 2)
 
     if moss.framework._global.WEB == True:
-        print "<br/><p class='start-banner'>" + banner + "</p>"
+        print "<br/><p class='start-banner'>" + banner + "</p><br/>"
     else:
         print colour(banner, 'white', bold=True)
 
@@ -123,7 +123,7 @@ def start_header(module_order):
 
 def put_output_file_location(output_file):
     if moss.framework._global.WEB == True:
-        print "<br/><br/><h6 class='start-header'> : : Output file location: {}</h6><br/><br/>".format(output_file)
+        print "<br/><br/><h6 class='start-header'> : : Output file location: {}</h6><br/><br/><br/>".format(output_file)
     else:
         print colour(' :: Output file location: {}'.format(output_file), 'white', bold=True)
 
@@ -250,7 +250,7 @@ def create_task_start_temp_file():
 
 def create_task_links_temp_file():
     with open('output/.links.json', 'w') as temp_output_file:
-        start_skeleton = {"links": {}}
+        start_skeleton = {"links": {"_run_task": [], "original_modules": []}}
         temp_output_file.write(json.dumps(start_skeleton, indent = 4))
 
 

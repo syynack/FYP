@@ -1,0 +1,26 @@
+2018-04-28 21:25:27,921 moss INFO Attempting to run device operation juniper_get_facts
+2018-04-28 21:25:27,921 moss INFO Successfully ran device operation juniper_get_facts
+2018-04-28 21:25:27,961 moss INFO Attempting to run module get_bgp_peer_states
+2018-04-28 21:25:27,961 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:25:30,280 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:25:30,281 moss INFO Successfully ran module get_bgp_peer_states
+2018-04-28 21:25:40,286 moss INFO Attempting to run module compare_bgp_peer_states
+2018-04-28 21:25:40,286 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:25:42,602 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:25:42,604 moss INFO Successfully ran module compare_bgp_peer_states
+2018-04-28 21:25:52,607 moss INFO Attempting to run module compare_bgp_peer_states
+2018-04-28 21:25:52,607 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:25:54,922 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:25:54,925 moss INFO Successfully ran module compare_bgp_peer_states
+2018-04-28 21:26:04,931 moss INFO Attempting to run module compare_bgp_peer_states
+2018-04-28 21:26:04,931 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:26:07,250 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:26:07,255 moss INFO Successfully ran module compare_bgp_peer_states
+2018-04-28 21:26:17,262 moss INFO Attempting to run module compare_bgp_peer_states
+2018-04-28 21:26:17,262 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:26:19,679 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:26:19,682 moss INFO Successfully ran module compare_bgp_peer_states
+2018-04-28 21:26:39,689 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-04-28 21:26:39,690 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-04-28 21:26:42,008 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-04-28 21:26:42,013 moss INFO Successfully ran module monitor_bgp_peer_state
