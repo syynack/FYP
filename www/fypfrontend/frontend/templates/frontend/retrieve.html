@@ -93,7 +93,7 @@
                             </tr>
                           </thead>
                           <tbody>
-                            {% for operation in module.operations %}
+                            {% for operation in module.device_operations %}
                             <tr>
                               <td><h5>{{ operation.name }}</h5></td>
                               {% if operation.result == "success" %}
