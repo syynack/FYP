@@ -1,0 +1,18 @@
+2018-04-29 18:38:23,301 moss INFO Attempting to run device operation juniper_get_facts
+2018-04-29 18:38:23,301 moss INFO Successfully ran device operation juniper_get_facts
+2018-04-29 18:38:23,341 moss INFO Attempting to run module pre_check_interface_status
+2018-04-29 18:38:23,341 moss INFO Attempting to run device operation juniper_show_interfaces_terse
+2018-04-29 18:38:25,652 moss INFO Successfully ran device operation juniper_show_interfaces_terse
+2018-04-29 18:38:25,655 moss INFO Successfully ran module pre_check_interface_status
+2018-04-29 18:38:25,657 moss INFO Attempting to run module apply_disable_statement
+2018-04-29 18:38:25,657 moss INFO Attempting to run device operation juniper_apply_configuration
+2018-04-29 18:38:31,536 moss INFO Successfully ran device operation juniper_apply_configuration
+2018-04-29 18:38:31,537 moss INFO Successfully ran module apply_disable_statement
+2018-04-29 18:38:36,540 moss INFO Attempting to run module post_check_disable_statement
+2018-04-29 18:38:36,540 moss INFO Attempting to run device operation juniper_check_configuration
+2018-04-29 18:38:37,158 moss INFO Successfully ran device operation juniper_check_configuration
+2018-04-29 18:38:37,160 moss INFO Successfully ran module post_check_disable_statement
+2018-04-29 18:38:37,163 moss INFO Attempting to run module post_check_interface_status
+2018-04-29 18:38:37,163 moss INFO Attempting to run device operation juniper_show_interfaces_terse
+2018-04-29 18:38:39,480 moss INFO Successfully ran device operation juniper_show_interfaces_terse
+2018-04-29 18:38:39,482 moss INFO Successfully ran module post_check_interface_status

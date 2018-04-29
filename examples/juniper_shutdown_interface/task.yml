@@ -1,0 +1,8 @@
+# This file is used to define task stages to be executed within the task.
+
+# Task
+task:
+- 'pre_check_interface_status'
+- 'apply_disable_statement'
+- 'post_check_disable_statement'
+- 'post_check_interface_status'

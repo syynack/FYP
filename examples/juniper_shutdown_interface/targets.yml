@@ -1,0 +1,25 @@
+# This file is used to define target information to be used when executing
+# tasks. This information is what shall be used when attempting to connect
+# to the targets.
+
+
+# Authentication
+# Define a global password to be used for all device connections
+global_password: ''
+
+# Define a global username to be used for all device connections
+global_username: ''
+
+
+# Endpoints
+# Define a global vendor if all the targets run the same operating system
+global_vendor: ''
+
+# Define target information
+targets:
+
+# Example
+- vendor: 'juniper'
+  ip: '192.168.253.130'
+  username: 'framework_test'
+  password: 'framework_test'
