@@ -35,5 +35,3 @@ def cisco_ios_check_configuration(connection, config_statements, area = None):
         "result": "success",
         "stdout": stdout
     }
-            
-
