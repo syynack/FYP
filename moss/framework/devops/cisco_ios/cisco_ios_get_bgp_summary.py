@@ -20,9 +20,9 @@ def cisco_ios_get_bgp_summary(connection):
         'BGP\stable\sversion\sis\s(?P<bgp_table_version>[^,]),\smain\srouting\stable\sversion\s(?P<routing_table_version>[^\n]+)'
     ]
 
-    neighbor_regex = '(?P<neighbor_ip>[^\s]+)\s+(?P<bgp_version>\d)\s+(?P<as_number>[0-9]+)\s+(?P<msg_recv>[0-9]+)\s+(?P<msg_sent>[0-9]+)\s+(?P<table_version>[0-9]+)\s+(?P<in_q>[0-9]+)\s+(?P<out_q>[0-9]+)\s+(?P<up_down>(never|[0-9]+:[0-9]+:[0-9]+))\s+(?P<state_prefix_received>[^\n]+)'
+    peer_regex = '(?P<peer_ip>[^\s]+)\s+(?P<bgp_version>\d)\s+(?P<as_number>[0-9]+)\s+(?P<msg_recv>[0-9]+)\s+(?P<msg_sent>[0-9]+)\s+(?P<table_version>[0-9]+)\s+(?P<in_q>[0-9]+)\s+(?P<out_q>[0-9]+)\s+(?P<up_down>(never|[0-9]+:[0-9]+:[0-9]+))\s+(?P<state_prefix_received>[^\n]+)'
 
-    stdout = {"neighbors": []}
+    stdout = {"peers": []}
 
     for line in output.splitlines():
         if 'BGP' in line:
@@ -31,9 +31,9 @@ def cisco_ios_get_bgp_summary(connection):
                 if data is not None:
                     stdout.update(data.groupdict())
         else:
-            data = re.search(neighbor_regex, line)
+            data = re.search(peer_regex, line)
             if data is not None:
-                stdout["neighbors"].append(data.groupdict())
+                stdout["peers"].append(data.groupdict())
 
     for key, value in stdout.iteritems():
         try:
@@ -41,10 +41,10 @@ def cisco_ios_get_bgp_summary(connection):
         except (ValueError, TypeError) as e:
             pass
 
-    for index, item in enumerate(stdout["neighbors"]):
+    for index, item in enumerate(stdout["peers"]):
         for key, value in item.iteritems():
             try:
-               stdout["neighbors"][index][key] = int(value) 
+               stdout["peers"][index][key] = int(value) 
             except (ValueError, TypeError) as e:
                 pass
 

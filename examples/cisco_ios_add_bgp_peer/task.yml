@@ -1,0 +1,8 @@
+# This file is used to define task stages to be executed within the task.
+
+# Task
+task:
+- 'pre_check_current_bgp_peers'
+- 'add_bgp_peer'
+- 'post_check_bgp_peer_config'
+- 'post_check_current_bgp_peers'

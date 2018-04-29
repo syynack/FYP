@@ -1,0 +1,188 @@
+{
+    "device_facts": {
+        "result": "success",
+        "stdout": {
+            "bytes_of_memory": "249856K/12288K",
+            "compiled": "Wed 18-Aug-10 08:18",
+            "cpu": "R7000",
+            "cpu_clock": "350MHz",
+            "dram_configuration": "64 bits",
+            "hostname": "R1",
+            "interfaces": [
+                {
+                    "count": "18",
+                    "interface_type": "FastEthernet"
+                },
+                {
+                    "count": "4",
+                    "interface_type": "Serial"
+                }
+            ],
+            "model": "Cisco 3745",
+            "nvram": "151K",
+            "parity": "enabled",
+            "processor_board_id": "FTX0945W0MY",
+            "release_software": "fc1",
+            "software": "3700",
+            "software_package": "C3745-ADVIPSERVICESK9-M",
+            "software_version": "12.4(25d)",
+            "uptime": {}
+        },
+        "uuid": "d32b3fb2-f50b-4c3a-ac3f-dbc206e5b722"
+    },
+    "end_date_time": "2018-04-29 19:28:13.185569",
+    "end_time": 1525026493.185567,
+    "result": "success",
+    "results": {
+        "modules": [
+            {
+                "delay": 0,
+                "device_operations": [
+                    {
+                        "name": "pre_check_current_bgp_peers_0_cisco_ios_get_bgp_summary_0",
+                        "result": "success",
+                        "stdout": {
+                            "peers": []
+                        },
+                        "uuid": "e572b81f-f20a-402d-bdf5-c40868c4957a"
+                    }
+                ],
+                "end_date_time": "2018-04-29 19:28:06.708029",
+                "end_time": 1525026486.708025,
+                "module": "pre_check_current_bgp_peers",
+                "next_module": "add_bgp_peer",
+                "result": "success",
+                "run_time": 0.8219490051269531,
+                "start_date_time": "2018-04-29 19:28:05.886080",
+                "start_time": 1525026485.886077,
+                "store": {
+                    "arguments": {
+                        "local_as": "200",
+                        "peer_as": "100",
+                        "peer_ip": "1.1.1.1"
+                    }
+                },
+                "uuid": "3a7375be-39fe-4e61-9cad-c64851fad656"
+            },
+            {
+                "delay": 0,
+                "device_operations": [
+                    {
+                        "name": "add_bgp_peer_0_cisco_ios_apply_configuration_0",
+                        "result": "success",
+                        "stdout": [
+                            "config term",
+                            "Enter configuration commands, one per line.  End with CNTL/Z.",
+                            "R1(config)#router bgp 200",
+                            "R1(config-router)#neighbor 1.1.1.1 remote-as 100",
+                            "R1(config-router)#end",
+                            "R1#"
+                        ],
+                        "uuid": "ac2f0873-2d72-40cf-86ee-cf59af4f4cfa"
+                    }
+                ],
+                "end_date_time": "2018-04-29 19:28:10.729757",
+                "end_time": 1525026490.729753,
+                "module": "add_bgp_peer",
+                "next_module": "post_check_bgp_peer_config",
+                "result": "success",
+                "run_time": 4.021626949310303,
+                "start_date_time": "2018-04-29 19:28:06.708127",
+                "start_time": 1525026486.708126,
+                "store": {
+                    "arguments": {
+                        "local_as": "200",
+                        "peer_as": "100",
+                        "peer_ip": "1.1.1.1"
+                    }
+                },
+                "uuid": "f00eec09-68d5-4ef5-8a60-9d1a350f2399"
+            },
+            {
+                "delay": 0,
+                "device_operations": [
+                    {
+                        "name": "post_check_bgp_peer_config_0_cisco_ios_check_configuration_0",
+                        "result": "success",
+                        "stdout": {
+                            "area": "router bgp 200",
+                            "present_config_statements": [
+                                "neighbor 1.1.1.1 remote-as 100"
+                            ]
+                        },
+                        "uuid": "bacabc89-ca56-47ba-8982-092967c6417f"
+                    }
+                ],
+                "end_date_time": "2018-04-29 19:28:12.360014",
+                "end_time": 1525026492.36001,
+                "module": "post_check_bgp_peer_config",
+                "next_module": "post_check_current_bgp_peers",
+                "result": "success",
+                "run_time": 1.6301138401031494,
+                "start_date_time": "2018-04-29 19:28:10.729897",
+                "start_time": 1525026490.729896,
+                "store": {
+                    "arguments": {
+                        "local_as": "200",
+                        "peer_as": "100",
+                        "peer_ip": "1.1.1.1"
+                    }
+                },
+                "uuid": "48d885ca-704b-41f1-b1cb-0c0ff554e475"
+            },
+            {
+                "delay": 0,
+                "device_operations": [
+                    {
+                        "name": "post_check_current_bgp_peers_0_cisco_ios_get_bgp_summary_0",
+                        "result": "success",
+                        "stdout": {
+                            "bgp_table_version": 1,
+                            "local_as": 200,
+                            "peers": [
+                                {
+                                    "as_number": 100,
+                                    "bgp_version": 4,
+                                    "in_q": 0,
+                                    "msg_recv": 0,
+                                    "msg_sent": 0,
+                                    "out_q": 0,
+                                    "peer_ip": "1.1.1.1",
+                                    "state_prefix_received": "Idle",
+                                    "table_version": 0,
+                                    "up_down": "never"
+                                }
+                            ],
+                            "router_id": "192.168.253.130",
+                            "routing_table_version": 1
+                        },
+                        "uuid": "f9f2bdd8-9834-4250-b916-349e82a989d1"
+                    }
+                ],
+                "end_date_time": "2018-04-29 19:28:13.184750",
+                "end_time": 1525026493.184746,
+                "module": "post_check_current_bgp_peers",
+                "next_module": "",
+                "result": "success",
+                "run_time": 0.824617862701416,
+                "start_date_time": "2018-04-29 19:28:12.360131",
+                "start_time": 1525026492.360129,
+                "store": {
+                    "arguments": {
+                        "local_as": "200",
+                        "peer_as": "100",
+                        "peer_ip": "1.1.1.1"
+                    }
+                },
+                "uuid": "9bb6c3c5-efad-4764-8707-e932439621ff"
+            }
+        ]
+    },
+    "run_time": 8.10041093826294,
+    "start_date_time": "2018-04-29 19:28:05.085169",
+    "start_hostname": "MacBook-Pro.home",
+    "start_time": 1525026485.085166,
+    "start_user": "matt",
+    "target": "192.168.253.130",
+    "uuid": "88c80031-fa7b-4f22-bf8b-ff2d34db65f5"
+}
