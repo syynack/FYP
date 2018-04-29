@@ -175,10 +175,14 @@ def _construct_stdout(start_data):
     for index, module in enumerate(links_data["links"]["_run_task"]):
         module_data = {}
         module_data[module] = stdout_data["module_results"][module]
-        module_data[module]["device_operations"] = {}
-        for device_operation in links_data["links"][module]:
-            module_data[module]["device_operations"][device_operation] = {}
-            module_data[module]["device_operations"][device_operation].update(stdout_data["module_results"][device_operation])
+        module_data[module]["device_operations"] = []
+        try:
+            for device_operation in links_data["links"][module]:
+                oper_dict = {"name": device_operation}
+                oper_dict.update(stdout_data["module_results"][device_operation])
+                module_data[module]["device_operations"].append(oper_dict)
+        except KeyError:
+            pass
 
         try:
             start_data["results"]["modules"][index].update(module_data[module])
@@ -195,45 +199,6 @@ def _construct_stdout(start_data):
 
     with open(title, 'r') as output_file:
         return os.path.abspath(output_file.name)
-
-    '''
-    for module in links_data["links"]:
-        module_data = {}
-        module_data.update(stdout_data["module_results"][module])
-        module_data['device_operations'] = {}
-        for operation in module:
-            module_data['device_operations'].update(stdout["module_results"][operation])
-
-    links_keys = []
-
-    for item in links_data['links']:
-        links_keys.append(item)
-
-    for link_key in links_keys:
-        per_module_stdout = {"operations": []}
-        for item in links_data['links'][link_key]:
-            stdout_data["module_results"][item].update({"name": item})
-            per_module_stdout["operations"].append(stdout_data["module_results"][item])
-
-        for index, module in enumerate(start_data["results"]["modules"]):
-            if module["module"] == link_key:
-                for key, value in stdout_data['module_results'].iteritems():
-                    if key == link_key:
-                        per_module_stdout.update(value)
-
-                start_data['results']['modules'][index].update(per_module_stdout)
-
-    end_data = _task_end_signals(start_data)
-    end_data.update({'uuid': str(uuid.uuid4())})
-    title = 'output/{}-{}-{}-{}.json'.format(end_data['uuid'], end_data['start_date_time'], end_data['start_user'], end_data['target']).replace(' ', '-')
-    write_json_to_file(end_data, title)
-
-    #os.remove('output/.stdout.json')
-    #os.remove('output/.links.json')
-
-    with open(title, 'r') as output_file:
-        return os.path.abspath(output_file.name)
-    '''
 
 
 def _run_task(connection, module_order):
@@ -292,7 +257,7 @@ def _run_task(connection, module_order):
     return start_data
 
 
-def task_control(targets, output_file, print_output, task, web):
+def task_control(targets, output_file, print_output, task, web, arguments):
     '''
     Summary:
     Controlling for the overall execution of the task, controls running each
@@ -326,6 +291,8 @@ def task_control(targets, output_file, print_output, task, web):
         targets_list_not_found_error()
         end_banner()
         sys.exit(1)
+
+    STORE.update({"arguments": arguments})
 
     try:
         for target in target_data['targets']:

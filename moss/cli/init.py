@@ -2,9 +2,11 @@
 
 import click
 import os
+import yaml
+import sys
 
 from moss.framework.utils import edit_file
-from moss.framework.text import TARGETS_BASE_TEXT, TASK_BASE_TEXT
+from moss.framework.text import TARGETS_BASE_TEXT, TASK_BASE_TEXT, MODULE_BASE_TEXT
 
 
 @click.command(short_help = 'Initialise a directory with base files')
@@ -34,3 +36,19 @@ def init():
         os.makedirs('output')
         log_file = open('output/messages.log', 'w')
         log_file.close()
+
+    try:
+        with open('task.yml', 'r') as yaml_file:
+            try:
+                yaml_data = yaml.load(yaml_file)
+            except yaml.YAMLError as e:
+                pass
+    except IOError as e:
+        error = str(e)
+        print 'Cannot find file {}'.format(str(error.split('directory')[1][4:-1]))
+        sys.exit(1)
+
+    for name in yaml_data["task"]:
+        if not os.path.isfile(name):
+            with open(name + '.py', 'w') as module_file:
+                module_file.write(MODULE_BASE_TEXT)
