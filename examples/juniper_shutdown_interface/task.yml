@@ -1,5 +1,8 @@
 # This file is used to define task stages to be executed within the task.
 
+# Arguments: interface
+# Command example: mcli run interface="em0"
+
 # Task
 task:
 - 'pre_check_interface_status'

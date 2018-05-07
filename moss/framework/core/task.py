@@ -174,6 +174,7 @@ def _construct_stdout(start_data):
 
     for index, module in enumerate(links_data["links"]["_run_task"]):
         module_data = {}
+        module_data["web_module"] = module
         module_data[module] = stdout_data["module_results"][module]
         module_data[module]["device_operations"] = []
         try:

@@ -1,26 +1,2250 @@
-2018-04-28 21:25:27,921 moss INFO Attempting to run device operation juniper_get_facts
-2018-04-28 21:25:27,921 moss INFO Successfully ran device operation juniper_get_facts
-2018-04-28 21:25:27,961 moss INFO Attempting to run module get_bgp_peer_states
-2018-04-28 21:25:27,961 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:25:30,280 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:25:30,281 moss INFO Successfully ran module get_bgp_peer_states
-2018-04-28 21:25:40,286 moss INFO Attempting to run module compare_bgp_peer_states
-2018-04-28 21:25:40,286 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:25:42,602 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:25:42,604 moss INFO Successfully ran module compare_bgp_peer_states
-2018-04-28 21:25:52,607 moss INFO Attempting to run module compare_bgp_peer_states
-2018-04-28 21:25:52,607 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:25:54,922 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:25:54,925 moss INFO Successfully ran module compare_bgp_peer_states
-2018-04-28 21:26:04,931 moss INFO Attempting to run module compare_bgp_peer_states
-2018-04-28 21:26:04,931 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:26:07,250 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:26:07,255 moss INFO Successfully ran module compare_bgp_peer_states
-2018-04-28 21:26:17,262 moss INFO Attempting to run module compare_bgp_peer_states
-2018-04-28 21:26:17,262 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:26:19,679 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:26:19,682 moss INFO Successfully ran module compare_bgp_peer_states
-2018-04-28 21:26:39,689 moss INFO Attempting to run module monitor_bgp_peer_state
-2018-04-28 21:26:39,690 moss INFO Attempting to run device operation juniper_get_bgp_peers
-2018-04-28 21:26:42,008 moss INFO Successfully ran device operation juniper_get_bgp_peers
-2018-04-28 21:26:42,013 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 08:51:28,290 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 08:51:28,290 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 08:51:28,332 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 08:51:28,332 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:51:30,649 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:51:30,651 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 08:51:40,658 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:51:40,658 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:51:42,976 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:51:42,978 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:51:52,986 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:51:52,986 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:51:55,301 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:51:55,304 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:52:05,312 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:52:05,312 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:52:07,628 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:52:07,631 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:52:17,637 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:52:17,640 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:52:19,959 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:52:19,962 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:52:29,970 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:52:29,970 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:52:32,287 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:52:32,292 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:52:42,298 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:52:42,298 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:52:44,621 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:52:44,625 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:52:54,634 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:52:54,634 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:52:56,953 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:52:56,959 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:53:06,968 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:53:06,968 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:53:09,290 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:53:09,296 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:53:19,306 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:53:19,306 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:53:21,622 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:53:21,628 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:53:31,638 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:53:31,638 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:53:33,957 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:53:33,965 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:53:43,976 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:53:43,976 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:53:46,396 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:53:46,405 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:53:56,416 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:53:56,416 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:53:58,735 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:53:58,743 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:54:08,750 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:54:08,751 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:54:11,071 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:54:11,079 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:54:21,091 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:54:21,094 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:54:23,414 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:54:23,422 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:54:33,431 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:54:33,431 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:54:35,749 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:54:35,759 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:54:45,769 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:54:45,770 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:54:48,088 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:54:48,096 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:54:58,108 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:54:58,108 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:55:00,423 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:55:00,431 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:55:10,439 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:55:10,439 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:55:12,753 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:55:12,761 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:55:22,770 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:55:22,770 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:55:25,087 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:55:25,094 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:55:35,105 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:55:35,106 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:55:37,426 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:55:37,434 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:55:47,445 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:55:47,448 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:55:49,768 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:55:49,775 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:55:59,786 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:55:59,786 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:56:02,103 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:56:02,111 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:56:47,118 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 08:56:47,120 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:56:49,435 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:56:49,444 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 08:56:59,454 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:56:59,454 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:57:01,879 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:57:01,886 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 08:59:45,163 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 08:59:45,163 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 08:59:45,201 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 08:59:45,201 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:59:47,525 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:59:47,530 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 08:59:57,537 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 08:59:57,537 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 08:59:59,859 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 08:59:59,861 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:00:09,867 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:00:09,867 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:00:12,186 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:00:12,189 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:00:22,192 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:00:22,192 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:00:24,515 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:00:24,518 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:00:34,526 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:00:34,526 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:00:36,842 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:00:36,846 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:00:46,854 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:00:46,856 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:00:49,180 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:00:49,184 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:00:59,192 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:00:59,192 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:01:01,515 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:01:01,520 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:01:11,530 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:01:11,530 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:01:13,847 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:01:13,853 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:01:23,862 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:01:23,862 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:01:26,188 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:01:26,194 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:01:36,202 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:01:36,202 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:01:38,519 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:01:38,525 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:01:48,533 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:01:48,534 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:01:50,850 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:01:50,859 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:02:00,869 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:02:00,869 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:02:03,287 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:02:03,295 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:02:13,307 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:02:13,307 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:02:15,627 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:02:15,635 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:02:25,647 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:02:25,647 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:02:27,970 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:02:27,978 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:02:37,990 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:02:37,990 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:02:40,307 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:02:40,315 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:02:50,323 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:02:50,325 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:02:52,642 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:02:52,650 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:03:02,661 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:03:02,661 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:03:04,982 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:03:04,989 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:03:15,000 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:03:15,000 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:03:17,319 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:03:17,328 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:03:27,340 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:03:27,340 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:03:29,661 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:03:29,668 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:03:39,680 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:03:39,680 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:03:42,000 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:03:42,007 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:03:52,017 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:03:52,017 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:03:54,340 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:03:54,347 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:04:04,359 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:04:04,359 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:04:06,679 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:04:06,687 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:04:16,699 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:04:16,699 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:04:19,125 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:04:19,134 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:04:29,141 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:04:29,141 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:04:31,463 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:04:31,471 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:04:41,481 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:04:41,481 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:04:43,802 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:04:43,810 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:04:53,821 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:04:53,821 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:04:56,149 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:04:56,157 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:05:06,167 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:05:06,167 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:05:08,487 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:05:08,497 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:05:18,510 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:05:18,510 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:05:20,933 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:05:20,941 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:05:30,949 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:05:30,950 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:05:33,270 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:05:33,278 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:05:43,290 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:05:43,290 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:05:45,607 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:05:45,615 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:05:55,624 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:05:55,627 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:05:57,949 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:05:57,957 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:06:07,968 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:06:07,968 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:06:10,282 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:06:10,289 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:06:20,301 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:06:20,301 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:06:22,622 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:06:22,630 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:06:32,641 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:06:32,642 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:06:34,961 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:06:34,969 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:06:44,980 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:06:44,980 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:06:47,298 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:06:47,308 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:06:57,318 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:06:57,318 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:06:59,638 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:06:59,646 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:07:09,659 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:07:09,659 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:07:11,984 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:07:11,991 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:07:21,999 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:07:21,999 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:07:24,313 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:07:24,320 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:07:34,329 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:07:34,329 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:07:36,647 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:07:36,655 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:07:46,662 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:07:46,662 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:07:48,982 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:07:48,989 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:07:58,999 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:07:59,000 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:08:01,324 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:08:01,331 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:08:11,342 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:08:11,342 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:08:13,665 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:08:13,672 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:08:23,681 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:08:23,681 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:08:25,994 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:08:26,003 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:08:36,011 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:08:36,011 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:08:38,430 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:08:38,436 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:08:48,448 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:08:48,450 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:08:50,767 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:08:50,774 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:09:00,785 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:09:00,785 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:09:03,105 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:09:03,113 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:09:13,125 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:09:13,125 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:09:15,449 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:09:15,456 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:09:25,468 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:09:25,468 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:09:27,787 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:09:27,795 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:09:37,805 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:09:37,805 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:09:40,122 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:09:40,129 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:09:50,142 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:09:50,145 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:09:52,566 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:09:52,574 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:10:02,583 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:10:02,583 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:10:04,903 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:10:04,911 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:10:14,923 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:10:14,923 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:10:17,243 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:10:17,253 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:10:27,263 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:10:27,263 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:10:29,682 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:10:29,690 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:10:39,702 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:10:39,702 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:10:42,027 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:10:42,034 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:10:52,045 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:10:52,048 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:10:54,366 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:10:54,374 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:11:04,384 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:11:04,384 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:11:06,702 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:11:06,709 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:11:16,718 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:11:16,720 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:11:19,040 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:11:19,048 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:11:29,059 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:11:29,059 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:11:31,380 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:11:31,387 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:11:41,397 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:11:41,397 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:11:43,840 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:11:43,847 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:11:53,861 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:11:53,861 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:11:56,199 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:11:56,206 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:12:06,222 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:12:06,222 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:12:08,559 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:12:08,567 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:12:18,579 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:12:18,581 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:12:20,910 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:12:20,918 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:12:30,933 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:12:30,933 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:12:33,269 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:12:33,276 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:12:43,290 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:12:43,290 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:12:45,627 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:12:45,634 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:12:55,649 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:12:55,649 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:12:57,990 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:12:57,998 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:13:08,011 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:13:08,011 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:13:10,343 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:13:10,351 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:13:20,361 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:13:20,363 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:13:22,699 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:13:22,707 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:13:32,721 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:13:32,721 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:13:35,042 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:13:35,050 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:13:45,067 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:13:45,067 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:13:47,502 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:13:47,513 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:13:57,529 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:13:57,529 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:13:59,860 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:13:59,867 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:14:09,882 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:14:09,882 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:14:12,307 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:14:12,316 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:14:22,331 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:14:22,331 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:14:24,654 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:14:24,662 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:14:34,674 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:14:34,674 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:14:36,997 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:14:37,005 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:14:47,020 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:14:47,022 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:14:49,359 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:14:49,368 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:14:59,381 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:14:59,381 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:15:01,712 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:15:01,719 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:15:11,730 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:15:11,731 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:15:14,068 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:15:14,075 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:15:24,089 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:15:24,092 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:15:26,430 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:15:26,438 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:15:36,449 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:15:36,449 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:15:38,782 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:15:38,788 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:15:48,796 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:15:48,799 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:15:51,130 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:15:51,138 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:16:01,151 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:16:01,151 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:16:03,594 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:16:03,601 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:16:13,616 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:16:13,616 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:16:16,002 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:16:16,008 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:16:26,022 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:16:26,022 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:16:28,352 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:16:28,359 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:16:38,372 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:16:38,372 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:16:40,706 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:16:40,714 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:16:50,747 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:16:50,747 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:16:53,411 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:16:53,419 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:17:03,436 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:17:03,436 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:17:05,852 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:17:05,860 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:17:15,871 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:17:15,874 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:17:18,194 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:17:18,206 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:17:28,218 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:17:28,218 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:17:30,539 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:17:30,547 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:17:40,561 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:17:40,561 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:17:42,984 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:17:42,992 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:17:53,003 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:17:53,003 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:17:55,324 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:17:55,331 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:18:05,341 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:18:05,342 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:18:07,766 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:18:07,773 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:18:17,783 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:18:17,785 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:18:20,106 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:18:20,115 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:18:30,127 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:18:30,127 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:18:32,446 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:18:32,454 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:18:42,472 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:18:42,472 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:18:44,786 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:18:44,794 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:18:54,805 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:18:54,805 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:18:57,125 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:18:57,133 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:19:07,141 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:19:07,142 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:19:09,560 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:19:09,568 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:19:19,580 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:19:19,581 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:19:21,902 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:19:21,911 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:19:31,927 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:19:31,927 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:19:34,351 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:19:34,360 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:19:44,367 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:19:44,367 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:19:46,723 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:19:46,732 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:19:56,748 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:19:56,749 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:19:59,063 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:19:59,071 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:20:09,083 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:20:09,083 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:20:11,398 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:20:11,406 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:20:21,414 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:20:21,418 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:20:23,734 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:20:23,741 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:20:33,753 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:20:33,753 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:20:36,065 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:20:36,072 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:20:46,082 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:20:46,084 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:20:48,401 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:20:48,409 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:20:58,420 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:20:58,421 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:04,547 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 09:28:04,548 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 09:28:04,589 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 09:28:04,589 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:06,910 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:28:06,914 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 09:28:16,920 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:28:16,929 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:19,244 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:28:19,247 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:28:29,253 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:28:29,253 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:31,575 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:28:31,580 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:28:41,588 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:28:41,589 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:43,908 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:28:43,912 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:28:53,919 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:28:53,919 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:28:56,235 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:28:56,240 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:29:06,247 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:29:06,247 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:29:08,566 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:29:08,571 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:29:18,579 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:29:18,581 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:29:21,003 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:29:21,009 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:29:31,017 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:29:31,017 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:29:33,331 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:29:33,336 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:29:43,345 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:29:43,345 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:29:45,662 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:29:45,668 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:29:55,674 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:29:55,676 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:29:57,999 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:29:58,005 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:30:08,013 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:30:08,013 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:30:10,334 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:30:10,341 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:30:20,349 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:30:20,351 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:30:22,670 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:30:22,676 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:30:32,687 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:30:32,687 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:30:35,010 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:30:35,018 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:30:45,030 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:30:45,030 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:30:47,351 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:30:47,361 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:30:57,370 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:30:57,371 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:30:59,792 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:30:59,799 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:31:09,809 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:31:09,809 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:31:12,126 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:31:12,132 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:31:22,143 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:31:22,143 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:31:24,468 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:31:24,475 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:31:34,485 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:31:34,485 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:31:36,806 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:31:36,814 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:31:46,823 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:31:46,826 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:31:49,143 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:31:49,150 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:31:59,163 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:31:59,163 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:32:01,480 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:32:01,487 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:32:11,497 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:32:11,497 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:32:13,810 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:32:13,818 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:32:23,830 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:32:23,830 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:32:26,150 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:32:26,157 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:32:36,169 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:32:36,169 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:32:38,491 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:32:38,498 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:32:48,509 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:32:48,512 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:32:50,835 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:32:50,843 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:33:00,851 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:33:00,851 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:33:03,166 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:33:03,173 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:33:13,181 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:33:13,181 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:33:15,495 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:33:15,503 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:33:25,513 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:33:25,513 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:33:27,830 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:33:27,838 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:33:37,850 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:33:37,850 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:33:40,171 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:33:40,178 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:33:50,190 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:33:50,193 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:33:52,614 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:33:52,622 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:02,638 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:02,638 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:04,955 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:04,963 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:14,970 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:14,970 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:17,287 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:17,299 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:27,308 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:27,309 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:29,629 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:29,638 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:39,654 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:39,654 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:41,971 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:41,978 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:51,993 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:51,995 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:54,320 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:54,328 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:04,341 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:04,341 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:06,654 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:06,662 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:16,677 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:16,680 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:18,993 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:19,001 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:29,018 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:29,018 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:31,434 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:31,443 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:41,460 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:41,460 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:43,782 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:43,790 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:53,805 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:53,806 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:56,128 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:56,137 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:36:06,151 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:36:06,151 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:36:08,472 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:36:08,480 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:36:18,493 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:36:18,493 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:36:20,815 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:36:20,823 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:36:30,836 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:36:30,836 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:36:33,159 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:36:33,166 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:36:43,180 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:36:43,180 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:36:45,498 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:36:45,506 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:36:55,521 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:36:55,521 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:36:57,839 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:36:57,846 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:37:07,860 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:37:07,860 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:37:10,182 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:37:10,190 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:37:20,202 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:37:20,203 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:37:22,524 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:37:22,531 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:37:32,543 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:37:32,544 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:37:34,854 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:37:34,862 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:37:44,878 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:37:44,878 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:37:47,199 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:37:47,207 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:37:57,217 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:37:57,217 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:37:59,639 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:37:59,647 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:38:09,657 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:38:09,657 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:38:12,079 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:38:12,088 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:38:22,101 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:38:22,101 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:38:24,418 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:38:24,427 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:38:34,440 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:38:34,440 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:38:36,759 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:38:36,767 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:38:46,781 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:38:46,784 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:38:49,108 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:38:49,116 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:38:59,132 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:38:59,132 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:39:01,451 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:39:01,458 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:39:11,475 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:39:11,475 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:39:13,799 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:39:13,807 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:39:23,823 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:39:23,823 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:39:26,141 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:39:26,148 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:39:36,161 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:39:36,161 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:39:38,480 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:39:38,488 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:39:48,505 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:39:48,512 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:39:50,834 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:39:50,842 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:40:00,855 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:40:00,855 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:40:03,175 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:40:03,182 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:40:13,198 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:40:13,198 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:40:15,521 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:40:15,529 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:40:25,542 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:40:25,542 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:40:27,861 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:40:27,868 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:40:37,879 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:40:37,879 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:40:40,199 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:40:40,207 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:40:50,223 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:40:50,223 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:40:52,543 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:40:52,551 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:41:02,567 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:41:02,567 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:41:04,883 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:41:04,892 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:41:14,909 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:41:14,909 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:41:17,229 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:41:17,240 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:41:27,258 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:41:27,258 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:41:29,575 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:41:29,583 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:41:39,598 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:41:39,598 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:41:41,918 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:41:41,927 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:41:51,943 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:41:51,946 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:41:54,366 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:41:54,374 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:42:10,971 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 09:42:10,971 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 09:42:11,014 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 09:42:11,014 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:42:13,334 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:42:13,336 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 09:42:23,339 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:42:23,340 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:42:25,654 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:42:25,656 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:42:35,661 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:42:35,661 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:42:37,983 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:42:37,988 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:42:47,994 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:42:47,996 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:42:50,419 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:42:50,424 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:43:00,434 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:43:00,434 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:43:02,756 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:43:02,760 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:43:12,769 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:43:12,769 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:43:15,082 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:43:15,086 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:43:25,096 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:43:25,096 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:43:27,521 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:43:27,525 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:43:37,533 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:43:37,533 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:43:39,854 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:43:39,859 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:43:49,870 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:43:49,873 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:43:52,195 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:43:52,201 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:44:02,211 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:44:02,211 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:44:04,530 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:44:04,536 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:44:14,549 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:44:14,550 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:44:16,870 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:44:16,880 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:44:26,890 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:44:26,890 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:44:29,206 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:44:29,213 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:44:39,225 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:44:39,225 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:44:41,545 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:44:41,553 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:44:51,570 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:44:51,573 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:44:53,998 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:44:54,006 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:45:04,021 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:45:04,021 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:45:06,341 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:45:06,348 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:45:16,362 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:45:16,364 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:45:18,686 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:45:18,694 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:45:28,709 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:45:28,710 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:45:31,030 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:45:31,037 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:45:41,049 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:45:41,050 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:45:43,470 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:45:43,477 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:45:53,490 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:45:53,491 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:45:55,811 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:45:55,818 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:46:05,834 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:46:05,834 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:46:08,158 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:46:08,166 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:46:18,180 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:46:18,182 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:46:20,497 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:46:20,505 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:46:30,521 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:46:30,521 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:46:32,842 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:46:32,850 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:46:42,867 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:46:42,867 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:46:45,189 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:46:45,197 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:46:55,206 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:46:55,206 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:46:57,520 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:46:57,527 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:47:07,541 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:47:07,541 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:47:09,861 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:47:09,868 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:47:19,884 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:47:19,887 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:47:22,309 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:47:22,318 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:47:32,331 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:47:32,331 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:47:34,650 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:47:34,657 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:47:44,671 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:47:44,671 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:47:47,089 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:47:47,097 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:47:57,111 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:47:57,111 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:47:59,535 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:47:59,543 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:48:09,553 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:48:09,553 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:48:11,867 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:48:11,875 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:48:21,890 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:48:21,890 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:48:24,211 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:48:24,220 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:48:34,234 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:48:34,234 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:48:36,555 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:48:36,563 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:48:46,575 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:48:46,578 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:48:48,998 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:48:49,007 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:48:59,023 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:48:59,023 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:49:01,442 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:49:01,449 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:49:11,463 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:49:11,463 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:49:13,773 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:49:13,781 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:49:23,797 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:49:23,801 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:49:26,122 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:49:26,130 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:49:36,143 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:49:36,143 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:49:38,461 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:49:38,468 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:49:48,484 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:49:48,487 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:49:50,908 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:49:50,915 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:50:00,930 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:50:00,930 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:50:03,248 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:50:03,255 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:50:13,270 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:50:13,270 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:50:15,694 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:50:15,702 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:50:25,717 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:50:25,717 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:50:28,034 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:50:28,042 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:50:38,057 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:50:38,057 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:50:40,378 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:50:40,386 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:50:50,398 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:50:50,401 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:50:52,718 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:50:52,726 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:51:02,741 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:51:02,741 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:51:05,063 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:51:05,071 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:51:15,088 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:51:15,088 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:51:17,401 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:51:17,411 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:51:27,427 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:51:27,427 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:51:29,745 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:51:29,753 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:51:39,771 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:51:39,771 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:51:42,087 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:51:42,094 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:51:52,109 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:51:52,109 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:51:54,430 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:51:54,438 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:58:30,433 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 09:58:30,434 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 09:58:30,473 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 09:58:30,473 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:58:32,795 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:58:32,796 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 09:58:42,801 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:58:42,801 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:58:45,222 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:58:45,225 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:58:55,232 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:58:55,232 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:58:57,553 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:58:57,556 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:59:07,561 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:59:07,561 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:59:09,882 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:59:09,885 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:59:19,892 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:59:19,895 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:59:22,212 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:59:22,215 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:59:32,222 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:59:32,223 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:59:34,543 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:59:34,548 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:59:44,554 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:59:44,554 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:59:46,873 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:59:46,881 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:59:56,889 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:59:56,889 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:59:59,206 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:59:59,212 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:00:09,221 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:00:09,221 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:00:11,540 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:00:11,547 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:01:33,352 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:01:33,352 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:01:33,391 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:01:33,391 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:01:35,814 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:01:35,816 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:01:45,821 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:01:45,821 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:01:48,140 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:01:48,145 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:01:58,150 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:01:58,150 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:02:00,472 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:02:00,474 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:02:10,480 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:02:10,481 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:02:12,793 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:02:12,797 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:02:22,806 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:02:22,806 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:02:25,127 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:02:25,131 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:02:35,138 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:02:35,142 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:02:37,460 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:02:37,465 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:02:47,473 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:02:47,473 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:02:49,793 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:02:49,797 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:02:59,805 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:02:59,805 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:03:02,126 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:03:02,132 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:03:12,141 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:03:12,141 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:03:14,458 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:03:14,464 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:03:24,474 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:03:24,474 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:03:26,794 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:03:26,801 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:03:36,811 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:03:36,811 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:03:39,229 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:03:39,238 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:03:49,248 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:03:49,248 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:03:51,670 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:03:51,678 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:04:01,689 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:04:01,689 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:04:04,004 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:04:04,011 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:04:49,021 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 10:04:49,022 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:04:51,345 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:04:51,353 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 10:05:01,365 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:05:01,365 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:05:03,684 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:05:03,692 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:05:13,703 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:05:13,704 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:05:16,026 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:05:16,037 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:05:26,050 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:05:26,050 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:05:28,470 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:05:28,478 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:05:38,489 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:05:38,489 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:05:40,805 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:05:40,814 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:05:50,822 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:05:50,822 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:05:53,140 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:05:53,148 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:06:03,158 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:06:03,158 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:06:05,481 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:06:05,490 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:06:15,501 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:06:15,501 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:06:17,818 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:06:17,828 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:19:02,221 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:19:02,222 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:19:02,263 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:19:02,263 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:19:04,585 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:19:04,587 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:19:14,592 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:19:14,592 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:19:16,912 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:19:16,916 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:19:26,922 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:19:26,922 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:19:29,240 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:19:29,243 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:19:39,252 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:19:39,252 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:19:41,566 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:19:41,569 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:19:51,573 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:19:51,574 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:19:53,890 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:19:53,895 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:20:03,903 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:20:03,903 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:20:06,226 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:20:06,231 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:20:16,242 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:20:16,244 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:20:18,560 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:20:18,565 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:20:28,577 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:20:28,577 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:20:30,899 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:20:30,904 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:20:40,917 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:20:40,917 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:20:43,238 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:20:43,244 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:20:53,254 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:20:53,256 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:20:55,578 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:20:55,584 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:21:05,592 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:21:05,592 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:21:07,911 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:21:07,921 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:21:17,931 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:21:17,934 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:21:20,257 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:21:20,264 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:21:30,273 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:21:30,273 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:21:32,590 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:21:32,598 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:21:42,609 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:21:42,610 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:21:44,923 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:21:44,931 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:22:29,942 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 10:22:29,943 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:22:32,260 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:22:32,268 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 10:22:42,275 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:22:42,276 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:22:44,598 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:22:44,606 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:22:54,619 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:22:54,619 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:22:56,938 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:22:56,947 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:23:06,960 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:23:06,960 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:23:09,275 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:23:09,283 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:23:19,295 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:23:19,295 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:23:21,615 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:23:21,623 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:23:31,635 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:23:31,635 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:23:33,954 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:23:33,963 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:23:43,973 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:23:43,973 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:23:46,289 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:23:46,300 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:23:56,311 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:23:56,311 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:23:58,634 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:23:58,642 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:24:08,652 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:24:08,653 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:24:10,973 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:24:10,980 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:24:20,991 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:24:20,993 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:24:23,304 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:24:23,312 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:34:38,948 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 09:34:38,948 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 09:34:38,987 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 09:34:38,988 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:41,409 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:41,411 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 09:34:51,414 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:34:51,414 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:34:53,733 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:34:53,736 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:03,743 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:03,743 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:06,062 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:06,065 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:16,072 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:16,090 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:18,414 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:18,417 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:28,424 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:28,425 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:30,746 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:30,750 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:40,754 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:40,754 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 09:35:43,170 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 09:35:43,174 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 09:35:53,184 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 09:35:53,184 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:19,224 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:39:19,224 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:39:19,263 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:39:19,263 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:21,685 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:21,687 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:39:31,694 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:31,694 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:34,014 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:34,016 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:44,024 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:44,024 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:46,339 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:46,343 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:56,347 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:56,347 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:58,669 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:58,672 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:08,677 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:08,677 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:11,000 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:11,004 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:21,012 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:21,012 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:23,334 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:23,339 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:33,347 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:33,347 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:35,666 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:35,671 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:45,681 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:45,681 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:48,102 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:48,108 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:58,116 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:58,117 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:44:19,097 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:44:19,097 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:44:19,136 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:44:19,136 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:44:21,464 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:44:21,466 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:44:31,469 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:44:31,469 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:44:33,891 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:44:33,894 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:44:43,901 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:44:43,901 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:44:46,223 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:44:46,229 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:44:56,237 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:44:56,237 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:44:58,559 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:44:58,564 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:45:08,572 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:45:08,572 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:45:10,886 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:45:10,890 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:45:20,897 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:45:20,899 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:45:23,213 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:45:23,217 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:45:33,225 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:45:33,225 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:45:35,545 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:45:35,550 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:45:45,557 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:45:45,557 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:45:47,878 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:45:47,886 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:45:57,895 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:45:57,895 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:46:00,219 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:46:00,225 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:46:10,235 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:46:10,236 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:46:12,557 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:46:12,564 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:46:22,574 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:46:22,574 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:46:24,889 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:46:24,898 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:46:34,904 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:46:34,904 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:46:37,322 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:46:37,329 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:46:47,341 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:46:47,344 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:46:49,760 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:46:49,768 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:46:59,777 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:46:59,777 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:47:02,094 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:47:02,101 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:47:12,111 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:47:12,112 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:47:14,428 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:47:14,436 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:47:24,445 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:47:24,445 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:47:26,766 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:47:26,773 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:47:36,784 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:47:36,784 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:47:39,103 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:47:39,111 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:47:49,122 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:47:49,125 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:47:51,443 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:47:51,450 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:48:01,461 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:48:01,462 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:48:03,779 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:48:03,786 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:48:13,796 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:48:13,796 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:48:16,115 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:48:16,124 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:48:26,134 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:48:26,135 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:48:28,554 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:48:28,561 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:48:38,573 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:48:38,573 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:48:40,996 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:48:41,004 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:48:51,015 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:48:51,015 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:48:53,331 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:48:53,339 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:49:03,351 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:49:03,351 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:49:05,668 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:49:05,677 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:49:15,689 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:49:15,689 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:49:18,110 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:49:18,120 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:49:28,130 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:49:28,130 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:49:30,554 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:49:30,561 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:50:15,573 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 10:50:15,573 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:50:17,889 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:50:17,896 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 10:50:27,907 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:50:27,907 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:50:30,222 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:50:30,230 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:50:40,241 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:50:40,241 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:50:42,564 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:50:42,571 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:50:52,580 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:50:52,581 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:50:54,901 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:50:54,909 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:51:04,921 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:51:04,921 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:51:07,235 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:51:07,246 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:51:17,257 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:51:17,260 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:51:19,582 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:51:19,590 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:51:29,601 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:51:29,602 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:51:31,922 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:51:31,932 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:51:41,944 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:51:41,944 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:51:44,267 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:51:44,274 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:51:54,285 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:51:54,287 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:51:56,605 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:51:56,613 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:52:06,624 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:52:06,624 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:52:08,943 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:52:08,952 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:52:18,964 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:52:18,966 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:52:21,288 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:52:21,295 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:52:31,304 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:52:31,304 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:52:33,626 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:52:33,634 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:52:43,645 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:52:43,645 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:52:45,963 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:52:45,977 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:52:55,989 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:52:55,989 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:52:58,310 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:52:58,319 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:53:08,331 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:53:08,331 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:53:10,650 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:53:10,659 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:53:20,671 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:53:20,671 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:53:23,094 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:53:23,102 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:53:33,114 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:53:33,114 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:53:35,435 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:53:35,442 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:53:45,452 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:53:45,452 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:53:47,773 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:53:47,783 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:53:57,794 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:53:57,794 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:54:00,110 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:54:00,118 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:54:10,128 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:54:10,128 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:54:12,442 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:54:12,449 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:54:22,460 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:54:22,463 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:54:24,780 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:54:24,789 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:54:34,797 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:54:34,797 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:54:37,218 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:54:37,226 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:54:47,237 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:54:47,239 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:54:49,558 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:54:49,567 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:54:59,579 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:54:59,579 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:55:01,899 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:55:01,911 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:55:11,922 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:55:11,922 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:55:14,241 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:55:14,249 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:55:24,256 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:55:24,259 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:55:26,578 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:55:26,585 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:55:36,595 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:55:36,596 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:55:38,914 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:55:38,922 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:55:48,932 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:55:48,935 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:55:51,253 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:55:51,261 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:56:01,273 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:56:01,274 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:56:03,594 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:56:03,602 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:56:13,615 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:56:13,615 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:56:15,936 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:56:15,945 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:56:25,956 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:56:25,958 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:56:28,279 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:56:28,287 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:56:38,300 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:56:38,300 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:56:40,720 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:56:40,730 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:56:50,741 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:56:50,743 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:56:53,162 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:56:53,170 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:57:03,183 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:57:03,183 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:57:05,502 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:57:05,510 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:57:15,518 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:57:15,518 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:57:17,838 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:57:17,849 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:57:27,856 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:57:27,857 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:57:30,176 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:57:30,183 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:57:40,195 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:57:40,195 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:57:42,514 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:57:42,521 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:00:14,875 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 11:00:14,875 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 11:00:14,914 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 11:00:14,914 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:00:17,238 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:00:17,239 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 11:00:27,245 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:00:27,245 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:00:29,562 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:00:29,566 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:00:39,573 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:00:39,573 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:00:41,894 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:00:41,897 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:00:51,904 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:00:51,905 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:00:54,223 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:00:54,227 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:01:04,234 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:01:04,234 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:01:06,548 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:01:06,552 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:01:16,556 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:01:16,559 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:01:18,878 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:01:18,883 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:01:28,888 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:01:28,888 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:01:31,212 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:01:31,217 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:02:16,225 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 11:02:16,227 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:02:18,549 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:02:18,555 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 11:02:28,565 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:02:28,565 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:02:30,882 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:02:30,888 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:02:40,896 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:02:40,896 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:02:43,218 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:02:43,224 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:02:53,235 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:02:53,235 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:02:55,554 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:02:55,564 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:03:05,574 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:03:05,574 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:03:07,897 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:03:07,905 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:03:17,916 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:03:17,919 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:03:20,235 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:03:20,242 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:03:30,249 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:03:30,249 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:03:32,568 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:03:32,576 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:03:42,584 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:03:42,585 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:03:45,004 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:03:45,012 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:03:55,024 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:03:55,026 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:03:57,349 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:03:57,358 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:04:07,368 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:04:07,368 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:04:09,685 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:04:09,693 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:04:19,704 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:04:19,707 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:04:22,031 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:04:22,040 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:04:32,049 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:04:32,049 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:04:34,370 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:04:34,378 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:04:44,388 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:04:44,389 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:04:46,710 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:04:46,721 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:04:56,733 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:04:56,733 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:04:59,049 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:04:59,057 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:05:09,069 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:05:09,069 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:05:11,390 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:05:11,397 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:05:21,405 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:05:21,408 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:05:23,823 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:05:23,831 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:05:33,842 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:05:33,843 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:05:36,166 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:05:36,175 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:05:46,187 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:05:46,189 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:25:22,018 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 11:25:22,018 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 11:25:22,057 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 11:25:22,057 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:25:24,380 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:25:24,383 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 11:25:34,389 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:25:34,389 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:25:36,710 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:25:36,713 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:25:46,719 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:25:46,721 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:25:49,038 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:25:49,041 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:25:59,045 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:25:59,046 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:26:01,365 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:26:01,369 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:26:11,376 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:26:11,376 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:26:13,691 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:26:13,695 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:26:23,701 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:26:23,702 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:26:26,122 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:26:26,127 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:26:36,135 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:26:36,135 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:26:38,454 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:26:38,459 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:26:48,469 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:26:48,471 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:26:50,894 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:26:50,900 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:27:00,908 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:27:00,908 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:27:03,228 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:27:03,234 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:27:13,242 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:27:13,242 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:27:15,663 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:27:15,669 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:27:25,679 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:27:25,682 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:27:28,003 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:27:28,013 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:27:38,021 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:27:38,021 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:30:17,869 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 11:30:17,869 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 11:30:17,911 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 11:30:17,911 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:30:20,231 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:30:20,232 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 11:30:30,238 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:30:30,238 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:30:32,558 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:30:32,560 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:30:42,567 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:30:42,567 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:30:44,887 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:30:44,892 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:30:54,897 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:30:54,897 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:30:57,214 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:30:57,218 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:31:07,222 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:31:07,222 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:31:09,547 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:31:09,551 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:31:54,557 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 11:31:54,558 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:31:56,877 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:31:56,882 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 11:32:06,889 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:32:06,889 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:32:09,213 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:32:09,218 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:32:19,227 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:32:19,229 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:32:21,550 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:32:21,556 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:32:31,566 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:32:31,566 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:32:33,879 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:32:33,884 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:32:43,894 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:32:43,894 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:32:46,206 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:32:46,214 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:32:56,225 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:32:56,225 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:32:58,541 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:32:58,549 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:33:08,560 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:33:08,560 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:33:10,882 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:33:10,888 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:33:20,897 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:33:20,897 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:33:23,318 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:33:23,326 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:33:33,340 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:33:33,340 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:33:35,662 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:33:35,672 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:33:45,685 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:33:45,685 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:33:48,006 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:33:48,015 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:33:58,028 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:33:58,028 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:34:00,352 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:34:00,361 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:34:10,377 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:34:10,377 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:34:12,701 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:34:12,709 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:34:22,720 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:34:22,720 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:34:25,041 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:34:25,049 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:34:35,059 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:34:35,059 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:34:37,382 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:34:37,390 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:34:47,398 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:34:47,401 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:34:49,719 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:34:49,727 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:34:59,739 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:34:59,740 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:35:02,063 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:35:02,071 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:35:12,079 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:35:12,079 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:35:14,403 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:35:14,412 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:35:24,425 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:35:24,427 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:35:26,748 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:35:26,756 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:35:36,766 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:35:36,766 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:35:39,084 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:35:39,092 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:35:49,105 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:35:49,107 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:35:51,427 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:35:51,435 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:36:01,447 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:36:01,447 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:36:03,865 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:36:03,874 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:36:13,885 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:36:13,885 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:36:16,207 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:36:16,217 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:36:43,225 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:36:43,225 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:36:43,265 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:36:43,265 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:36:45,689 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:36:45,691 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:36:55,697 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:36:55,697 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:36:58,018 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:36:58,021 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:37:08,029 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:37:08,029 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:37:19,938 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 10:37:19,938 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 10:37:19,978 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 10:37:19,978 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:37:22,299 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:37:22,300 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 10:37:32,306 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:37:32,306 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:37:34,727 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:37:34,730 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:37:44,737 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:37:44,737 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:37:47,060 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:37:47,066 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:37:57,073 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:37:57,074 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:37:59,392 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:37:59,395 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:38:09,400 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:38:09,401 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:38:11,718 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:38:11,721 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:38:21,727 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:38:21,727 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:38:24,051 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:38:24,055 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:38:34,065 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:38:34,065 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:38:36,383 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:38:36,388 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:38:46,394 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:38:46,394 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:38:48,814 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:38:48,820 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:38:58,829 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:38:58,829 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:01,146 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:01,153 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:11,160 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:11,160 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:13,482 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:13,488 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:23,497 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:23,497 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:25,819 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:25,828 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:35,837 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:35,838 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:38,263 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:38,270 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:39:48,279 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:39:48,280 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:39:50,599 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:39:50,606 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:00,617 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:00,618 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:02,937 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:02,944 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:12,957 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:12,957 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:15,280 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:15,288 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:25,298 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:25,298 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:27,718 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:27,727 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:37,736 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:37,736 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:40,155 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:40,163 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:40:50,174 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:40:50,174 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:40:52,495 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:40:52,503 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:41:02,514 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:41:02,514 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:41:04,935 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:41:04,943 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:41:14,956 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:41:14,956 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:41:17,383 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:41:17,392 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:41:27,401 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:41:27,402 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:41:29,721 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:41:29,729 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:41:39,737 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:41:39,738 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:41:42,062 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:41:42,070 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:41:52,081 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:41:52,081 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:41:54,402 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:41:54,409 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:42:04,421 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:42:04,421 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:42:06,740 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:42:06,748 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:42:16,759 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:42:16,759 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:42:19,080 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:42:19,088 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:42:29,097 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:42:29,097 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:42:31,439 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:42:31,446 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:42:41,457 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:42:41,457 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:42:43,796 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:42:43,804 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:42:53,819 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:42:53,820 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:42:56,263 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:42:56,270 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:43:06,280 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:43:06,280 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:43:08,616 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:43:08,624 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 10:43:18,637 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 10:43:18,639 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 10:43:20,977 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 10:43:20,985 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:47:43,208 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 11:47:43,208 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 11:47:43,248 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 11:47:43,248 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:47:45,569 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:47:45,571 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 11:47:55,574 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:47:55,574 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:47:57,991 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:47:57,994 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:48:08,001 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:48:08,001 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:48:10,317 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:48:10,320 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:48:20,326 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:48:20,328 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:48:22,647 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:48:22,651 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:48:32,658 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:48:32,658 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:48:34,978 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:48:34,982 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:48:44,987 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:48:44,987 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:48:47,312 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:48:47,318 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:48:57,326 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:48:57,326 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:48:59,646 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:48:59,651 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:49:09,658 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:49:09,658 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:49:11,971 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:49:11,977 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:49:21,985 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:49:21,985 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:49:24,402 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:49:24,409 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:49:34,419 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:49:34,419 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:49:36,743 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:49:36,750 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:49:46,760 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:49:46,763 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:49:49,078 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:49:49,086 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:49:59,097 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:49:59,097 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:50:01,520 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:50:01,527 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:50:11,538 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:50:11,539 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:50:13,859 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:50:13,866 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:50:23,877 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:50:23,880 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:50:26,200 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:50:26,207 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:50:36,217 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:50:36,217 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:50:38,639 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:50:38,646 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:50:48,657 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:50:48,660 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:50:50,978 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:50:50,986 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:51:00,998 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:51:00,998 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:51:03,318 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:51:03,326 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:51:13,337 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:51:13,337 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:51:15,662 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:51:15,669 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:51:25,681 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:51:25,681 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:51:28,100 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:51:28,108 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:51:38,120 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:51:38,120 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:51:40,538 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:51:40,545 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:51:50,557 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:51:50,557 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:51:52,876 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:51:52,885 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:52:02,895 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:52:02,895 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:52:05,318 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:52:05,325 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:52:15,336 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:52:15,337 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:52:17,654 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:52:17,663 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:52:27,675 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:52:27,675 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:52:30,094 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:52:30,101 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:52:40,110 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:52:40,110 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:52:42,429 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:52:42,437 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:52:52,448 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:52:52,449 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:52:54,766 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:52:54,773 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:53:04,786 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:53:04,786 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:53:07,105 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:53:07,112 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:53:52,120 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 11:53:52,121 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:53:54,438 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:53:54,445 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 11:54:04,454 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:54:04,454 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:54:06,771 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:54:06,780 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:54:16,791 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:54:16,793 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:54:19,107 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:54:19,114 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:54:29,126 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:54:29,126 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:54:31,540 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:54:31,549 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:54:41,558 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:54:41,558 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:54:43,878 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:54:43,885 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:54:53,898 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:54:53,900 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:54:56,218 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:54:56,226 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:55:06,237 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:55:06,238 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:55:08,559 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:55:08,566 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:55:18,576 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:55:18,579 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:55:20,998 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:55:21,007 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:55:31,017 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:55:31,018 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:55:33,432 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:55:33,440 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:55:43,449 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:55:43,449 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:55:45,768 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:55:45,777 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:55:55,789 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:55:55,791 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:55:58,114 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:55:58,122 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:56:08,130 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:56:08,130 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:56:10,450 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:56:10,457 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:56:20,470 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:56:20,470 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:56:22,790 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:56:22,798 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:56:32,811 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:56:32,812 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:56:35,137 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:56:35,145 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:56:45,162 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:56:45,163 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:56:47,476 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:56:47,487 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:56:57,503 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:56:57,503 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:56:59,820 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:56:59,831 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:57:09,845 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:57:09,846 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:57:12,164 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:57:12,174 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:57:22,188 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:57:22,190 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:57:24,507 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:57:24,515 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:57:34,529 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:57:34,529 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:57:36,847 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:57:36,855 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:57:46,870 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:57:46,872 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:57:49,192 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:57:49,201 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:57:59,218 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:57:59,218 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:58:01,530 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:58:01,538 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:58:11,555 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:58:11,555 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:58:13,874 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:58:13,883 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:58:23,899 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:58:23,902 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:58:26,224 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:58:26,236 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:58:36,248 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:58:36,249 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:58:38,567 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:58:38,575 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:58:48,589 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:58:48,591 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:58:50,909 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:58:50,917 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:59:00,933 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:59:00,933 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:59:03,255 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:59:03,263 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:59:13,281 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:59:13,281 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:59:15,599 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:59:15,606 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:59:25,621 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:59:25,621 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:59:28,047 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:59:28,056 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:59:38,065 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:59:38,065 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:59:40,386 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:59:40,394 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 11:59:50,409 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 11:59:50,411 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 11:59:52,734 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 11:59:52,741 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:00:02,758 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:00:02,759 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:00:05,078 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:00:05,087 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:00:15,101 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:00:15,101 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:00:17,426 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:00:17,437 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:00:27,454 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:00:27,454 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:00:29,776 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:00:29,785 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:00:39,799 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:00:39,799 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:00:42,214 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:00:42,222 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:00:52,239 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:00:52,239 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:00:54,562 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:00:54,570 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 12:01:04,587 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 12:01:04,587 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 12:01:06,906 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 12:01:06,914 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:43:47,034 moss INFO Attempting to run device operation juniper_get_facts
+2018-05-04 13:43:47,034 moss INFO Successfully ran device operation juniper_get_facts
+2018-05-04 13:43:47,075 moss INFO Attempting to run module get_bgp_peer_states
+2018-05-04 13:43:47,076 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:43:49,401 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:43:49,403 moss INFO Successfully ran module get_bgp_peer_states
+2018-05-04 13:43:59,409 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:43:59,409 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:44:01,729 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:44:01,733 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:44:11,737 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:44:11,737 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:44:14,058 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:44:14,060 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:44:24,067 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:44:24,070 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:44:26,391 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:44:26,395 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:44:36,405 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:44:36,405 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:44:38,727 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:44:38,730 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:44:48,735 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:44:48,735 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:44:51,056 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:44:51,060 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:45:01,067 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:45:01,068 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:45:03,385 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:45:03,390 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:45:13,398 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:45:13,398 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:45:15,721 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:45:15,727 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:46:00,736 moss INFO Attempting to run module monitor_bgp_peer_state
+2018-05-04 13:46:00,736 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:46:03,054 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:46:03,062 moss INFO Successfully ran module monitor_bgp_peer_state
+2018-05-04 13:46:13,072 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:46:13,073 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:46:15,391 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:46:15,399 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:46:25,406 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:46:25,406 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:46:27,726 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:46:27,735 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:46:37,746 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:46:37,746 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:46:40,064 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:46:40,072 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:46:50,080 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:46:50,080 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:46:52,401 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:46:52,412 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:47:02,424 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:47:02,424 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:47:04,747 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:47:04,754 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:47:14,766 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:47:14,766 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:47:17,086 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:47:17,093 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:47:27,104 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:47:27,105 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:47:29,426 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:47:29,434 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:47:39,445 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:47:39,445 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:47:41,764 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:47:41,772 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:47:51,784 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:47:51,785 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:47:54,105 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:47:54,116 moss INFO Successfully ran module compare_bgp_peer_states
+2018-05-04 13:48:04,125 moss INFO Attempting to run module compare_bgp_peer_states
+2018-05-04 13:48:04,126 moss INFO Attempting to run device operation juniper_get_bgp_peers
+2018-05-04 13:48:06,446 moss INFO Successfully ran device operation juniper_get_bgp_peers
+2018-05-04 13:48:06,455 moss INFO Successfully ran module compare_bgp_peer_states

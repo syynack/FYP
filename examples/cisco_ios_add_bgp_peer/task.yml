@@ -1,5 +1,9 @@
 # This file is used to define task stages to be executed within the task.
 
+# Requirements: peer_as, peer_ip, local_as
+# Example command: mcli run peer_as='100' local_as='100' peer_ip='10.0.0.2'
+
+
 # Task
 task:
 - 'pre_check_current_bgp_peers'

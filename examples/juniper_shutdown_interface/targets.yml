@@ -20,6 +20,6 @@ targets:
 
 # Example
 - vendor: 'juniper'
-  ip: '192.168.253.130'
+  ip: '192.168.253.141'
   username: 'framework_test'
   password: 'framework_test'

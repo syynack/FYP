@@ -16,3 +16,99 @@
 2018-04-29 19:28:12,360 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
 2018-04-29 19:28:13,176 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
 2018-04-29 19:28:13,181 moss INFO Successfully ran module post_check_current_bgp_peers
+2018-05-03 19:58:57,361 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-03 20:00:48,307 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-03 20:00:49,077 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-03 20:00:49,117 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-03 20:00:49,117 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-03 20:00:49,936 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-03 20:00:49,939 moss INFO Successfully ran module pre_check_current_bgp_peers
+2018-05-03 20:00:49,941 moss INFO Attempting to run module add_bgp_peer
+2018-05-03 20:00:49,941 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-05-03 20:00:53,951 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-05-03 20:00:53,954 moss INFO Successfully ran module add_bgp_peer
+2018-05-03 20:00:53,956 moss INFO Attempting to run module post_check_bgp_peer_config
+2018-05-03 20:00:53,956 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-05-03 20:00:55,587 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-05-03 20:00:55,589 moss INFO Successfully ran module post_check_bgp_peer_config
+2018-05-03 20:00:55,591 moss INFO Attempting to run module post_check_current_bgp_peers
+2018-05-03 20:00:55,591 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-03 20:00:56,407 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-03 20:00:56,410 moss INFO Successfully ran module post_check_current_bgp_peers
+2018-05-04 08:53:40,170 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-04 08:53:40,947 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-04 08:53:40,984 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-04 08:53:40,984 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 08:53:41,803 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 08:53:41,807 moss INFO Successfully ran module pre_check_current_bgp_peers
+2018-05-04 08:53:41,809 moss INFO Attempting to run module add_bgp_peer
+2018-05-04 08:53:41,809 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-05-04 08:53:45,810 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-05-04 08:53:45,814 moss INFO Successfully ran module add_bgp_peer
+2018-05-04 08:53:45,816 moss INFO Attempting to run module post_check_bgp_peer_config
+2018-05-04 08:53:45,816 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-05-04 08:53:47,452 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-05-04 08:53:47,456 moss INFO Successfully ran module post_check_bgp_peer_config
+2018-05-04 08:53:47,459 moss INFO Attempting to run module post_check_current_bgp_peers
+2018-05-04 08:53:47,459 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 08:53:48,273 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 08:53:48,278 moss INFO Successfully ran module post_check_current_bgp_peers
+2018-05-04 10:07:32,584 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-04 10:07:33,352 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-04 10:07:33,390 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-04 10:07:33,390 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 10:07:34,212 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 10:07:34,213 moss INFO Successfully ran module pre_check_current_bgp_peers
+2018-05-04 10:07:34,216 moss INFO Attempting to run module add_bgp_peer
+2018-05-04 10:07:34,216 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-05-04 10:07:38,226 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-05-04 10:07:38,228 moss INFO Successfully ran module add_bgp_peer
+2018-05-04 10:07:38,230 moss INFO Attempting to run module post_check_bgp_peer_config
+2018-05-04 10:07:38,230 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-05-04 10:07:39,862 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-05-04 10:07:39,864 moss INFO Successfully ran module post_check_bgp_peer_config
+2018-05-04 10:07:39,867 moss INFO Attempting to run module post_check_current_bgp_peers
+2018-05-04 10:07:39,867 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 10:07:40,690 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 10:07:40,693 moss INFO Successfully ran module post_check_current_bgp_peers
+2018-05-04 10:25:24,231 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-04 10:25:25,000 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-04 10:25:25,037 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-04 10:25:25,037 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 10:25:25,855 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 10:25:25,857 moss INFO Successfully ran module pre_check_current_bgp_peers
+2018-05-04 10:25:25,859 moss INFO Attempting to run module add_bgp_peer
+2018-05-04 10:25:25,859 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-05-04 10:25:29,849 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-05-04 10:25:29,852 moss INFO Successfully ran module add_bgp_peer
+2018-05-04 10:25:29,854 moss INFO Attempting to run module post_check_bgp_peer_config
+2018-05-04 10:25:29,854 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-05-04 10:25:31,487 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-05-04 10:25:31,489 moss INFO Successfully ran module post_check_bgp_peer_config
+2018-05-04 10:25:31,491 moss INFO Attempting to run module post_check_current_bgp_peers
+2018-05-04 10:25:31,491 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 10:25:32,310 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 10:25:32,313 moss INFO Successfully ran module post_check_current_bgp_peers
+2018-05-04 09:34:08,592 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-04 09:34:09,362 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-04 09:34:09,400 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-04 09:34:09,400 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 09:34:10,220 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 11:04:00,586 moss INFO Attempting to run device operation cisco_ios_get_facts
+2018-05-04 11:04:01,342 moss INFO Successfully ran device operation cisco_ios_get_facts
+2018-05-04 11:04:01,381 moss INFO Attempting to run module pre_check_current_bgp_peers
+2018-05-04 11:04:01,381 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 11:04:02,200 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 11:04:02,201 moss INFO Successfully ran module pre_check_current_bgp_peers
+2018-05-04 11:04:02,203 moss INFO Attempting to run module add_bgp_peer
+2018-05-04 11:04:02,203 moss INFO Attempting to run device operation cisco_ios_apply_configuration
+2018-05-04 11:04:06,218 moss INFO Successfully ran device operation cisco_ios_apply_configuration
+2018-05-04 11:04:06,221 moss INFO Successfully ran module add_bgp_peer
+2018-05-04 11:04:06,223 moss INFO Attempting to run module post_check_bgp_peer_config
+2018-05-04 11:04:06,223 moss INFO Attempting to run device operation cisco_ios_check_configuration
+2018-05-04 11:04:07,853 moss INFO Successfully ran device operation cisco_ios_check_configuration
+2018-05-04 11:04:07,856 moss INFO Successfully ran module post_check_bgp_peer_config
+2018-05-04 11:04:07,858 moss INFO Attempting to run module post_check_current_bgp_peers
+2018-05-04 11:04:07,858 moss INFO Attempting to run device operation cisco_ios_get_bgp_summary
+2018-05-04 11:04:08,673 moss INFO Successfully ran device operation cisco_ios_get_bgp_summary
+2018-05-04 11:04:08,676 moss INFO Successfully ran module post_check_current_bgp_peers

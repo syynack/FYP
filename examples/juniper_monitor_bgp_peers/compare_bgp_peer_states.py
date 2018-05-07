@@ -37,7 +37,7 @@ def compare_bgp_peer_states(connection, store):
 
     if len(peers_with_changed_state) > 0:
         store["peers_with_changed_state"] = peers_with_changed_state
-        return ModuleResult.branch("monitor_bgp_peer_state", delay = 20)
+        return ModuleResult.branch("monitor_bgp_peer_state", delay = 45)
 
     store["previous_bgp_peer_state"] = current_bgp_peer_state["stdout"]["peers"]
     return ModuleResult.retry(delay = 10)

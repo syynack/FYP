@@ -1,11 +1,69 @@
-<br/><p class='start-banner'>========================================[ Task Start ]========================================</p><br/>
+<br/><p class='start-banner'>===================================================================[ Task Start ]===================================================================</p><br/>
 <br/><h6 class='start-header'> : : Modules to be executed:  </h6>
-<br/><h6 class='start-header-names'>	get_bgp_peers</h6>
+<br/><h6 class='start-header-names'>	get_bgp_peer_states</h6>
+<br/><h6 class='start-header-names'>	compare_bgp_peer_states</h6>
+<br/><h6 class='start-header-names'>	monitor_bgp_peer_state</h6>
 <br/><br/><h6 class='start-header'>
- : : First module: get_bgp_peers</h6></br>
+ : : First module: get_bgp_peer_states</h6></br>
 <br/><h6 class='start-header'>
- : : Target: 192.168.253.130</h6>
-<br/><h6 class='module-start-header'>	 : : get_bgp_peers</h6><b>
-. . . . . </b><h6 class='success'>success</h6>
-<br/><br/><h6 class='start-header'> : : Output file location: /Users/matt/git/fyp/examples/monitor_bgp_peers/output/40cc70de-1f59-487f-b04a-4ee379ec4737-2018-04-27-15:22:14.693812-matt-192.168.253.130.json</h6><br/><br/><br/>
-<p class='start-banner'>=========================================[ Task End ]=========================================</p>
+ : : Target: 192.168.253.140</h6>
+<br/><h6 class='module-start-header'>	 : : get_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='success'>success</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
+<br/><h6 class='module-start-header'>	 : : compare_bgp_peer_states</h6><b>
+. . . . . </b><h6 class='retry'>retry</h6> <h6 class='delay'>(delay = 10)</h6>
